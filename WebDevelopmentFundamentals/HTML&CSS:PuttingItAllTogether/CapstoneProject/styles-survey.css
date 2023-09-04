@@ -1,0 +1,110 @@
+/* body Styling */
+body{
+    background-color: var(--backgroundColor);
+    min-height: 100vh;
+}
+
+/* from styling */
+form{
+    margin: 70px auto;
+    width: 60%;
+    justify-content: center;
+    color: var(--fontColor);
+    background-color: var(--containerColor);
+    padding: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+/* prompt section */
+#prompt{
+    text-align: justify;
+}
+
+/* First Name Section */
+#firstNameContainer{
+    display:block;
+    justify-content: center;
+    text-align: center;
+}
+#firstName{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+label[for="firstName"] {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+/* Last Name Section */
+#lastNameContainer{
+    display:block;
+    justify-content: center;
+    text-align: center;
+}
+#lastName{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+label[for="lastName"] {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+/* Email Address Section */
+#emailContainer{
+    display:block;
+    justify-content: center;
+    text-align: center;
+}
+#emailAddress{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+label[for="emailAddress"] {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+/* Comments Section */
+#commentsSection{
+    display: block;
+    margin: 10px;
+}
+
+#commentsConcerns{
+    display: block;
+    justify-content: center;
+    margin:  10px auto;
+    padding: 5px;
+    width: 50%;
+    height: 150px;
+}
+
+label[for="Comments"] {
+    font-size: larger;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+/* button Styling  */
+button{
+    margin: 10px;
+    color: var(--containerColor);
+    background-color: var(--fontColor);
+    font-size: 14px;
+    padding: 5px;
+}

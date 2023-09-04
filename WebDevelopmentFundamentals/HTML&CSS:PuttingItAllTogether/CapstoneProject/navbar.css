@@ -1,0 +1,40 @@
+/* CSS for Nav Bar */
+nav{
+    position:fixed;
+    top: 0%;
+    z-index: 2;
+    width: 100%;
+    padding-left: 10px;
+    background-color: black;
+    background-image: linear-gradient(90deg, #ff4655 25%, #000000 55%);
+}
+
+#navbarList{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+    margin: 10px;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+
+#navbarList> li >a{
+    list-style-type: none;
+    text-decoration: none;
+}
+#navbarList> li :visited {
+    color: white;
+}
+
+
+/* logo styling */
+#valLogo{
+    height: 50px;
+    mix-blend-mode: transparent;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}

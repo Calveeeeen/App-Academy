@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles-universal.css">
+    <link rel="stylesheet" href="styles-maps.css">
+    <title>Valorant Maps</title>
+</head>
+
+<header>
+    <nav>
+        <ul id="navbarList">
+            <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/homepage.html">
+                <img id="valLogo" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/valorant-logo-2.png" alt="valorant logo">
+            </a>
+
+            <div></div>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/homepage.html">Home</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/Agents.html">Agents</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/Maps.html">Maps</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/gameModes.html">Game Modes</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/survey.html">Help Us Out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <img id="mapsBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/mapsBanner1.jpeg" alt="Maps Banner">
+
+    <div id="splitPage">
+        <div id="sidebar">
+            <h4>Current Rotation</h4>
+            <ul>
+                <li><a href="#mapAscent">Ascent</a></li>
+                <li><a href="#mapBind">Bind</a></li>
+                <li><a href="#mapFracture">Fracture</a></li>
+                <li><a href="#mapHaven">Haven</a></li>
+                <li><a href="#mapLotus">Lotus</a></li>
+                <li><a href="#mapPearl">Pearl</a></li>
+                <li><a href="#mapSplit">Split</a></li>
+                <li><a href="#mapTheRange">The Range</a></li>
+            </ul>
+
+            <h4>Not in Rotation</h4>
+            <ul>
+                <li><a href="#mapBreeze">Breeze</a></li>
+                <li><a href="#mapIcebox">Icebox</a></li>
+            </ul>
+        </div>
+        <div id="mainContent">
+            <h1>Valorant Maps</h1>
+            <h2>Current Rotation</h2>
+            <div id="mapsContainer">
+                <div id="mapAscent">
+                    <h2 id="Ascent">Ascent</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/ascentMap1.webp" alt="image of the map: Ascent">
+                    <p>
+                        Ascent is a map set in Italy that features a large, open middle area that both teams can skirmish over. Mid
+                        is a playground for diverse ability use and successfully controlling the area opens additional routes for
+                        Attackers to both Spike sites.
+                    </p>
+                    <p>
+                        The map's 'unique' features include mechanical doors leading into sites. Each site has one door (A Link for
+                        A and Market for B) that is opened at the start of each round. Players can use a switch on the site side of
+                        the door (Next to the door on A and on a table in Toolshed on B) to close or open the door. These doors are
+                        impenetrable while closed but have 500 HP, allowing players to damage and eventually destroy them. Once
+                        destroyed, the doorway remains permanently open for the rest of the round.
+                    </p>
+                    <p>
+                        The two walls separating Courtyard from Link also have a destructible panel each to cover them. Whilst
+                        intact, they absorb damage and cannot be penetrated by gunfire. The panels however have 400 HP each and can
+                        be damaged, with colored indicators on them implying how much health they have left (starts blue, then turns
+                        yellow and then red as they take more damage). They can eventually be destroyed to allow players to wallbang
+                        through these walls for the rest of the round.
+                    </p>
+                </div>
+
+                <div id="mapBind">
+                    <h2 id="Bind">Bind</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/bindMap1.avif" alt="image of the map: Bind">
+                    <p>
+                        Bind's "unique" feature is that it doesn't contain a mid section, instead having two one-way teleporters.
+                        One takes players from A Short to B Short and the other takes players from B Long to A Lobby.
+                    </p>
+                    <p>
+                        Players use teleporters by walking into the section of wall taken up by the teleport entrance. They will
+                        then instantly arrive in a small exit room which players leave by walking towards the door out of the room.
+                        This door is closed by default and can only be opened by players inside the exit room walking up to it, at
+                        which point they will open automatically. Players outside the exit room cannot open these doors, but they
+                        can be penetrated by gunfire.
+                    </p>
+                    <p>
+                        Other objects can also be sent through teleporters if they come into contact with the teleporter entrance.
+                        They will maintain any velocity they had before being teleported and can open the doors and leave the exit
+                        room should they travel far enough to trigger the door sensor. Objects include abilities, the spike, and
+                        dropped weapons. Whenever a teleporter is used by an agent or an object, all players on the map will be
+                        given an audio cue.
+                    </p>
+                </div>
+
+                <div id="mapFracture">
+                    <h2 id="Fracture">Fracture</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/fractureMap1.webp" alt="image of the map: Fracture">
+                    <p>
+                        Fracture's unique design splits up the map into four neutral quadrants, four central areas between the
+                        quadrants that contain the sites and Attacker spawns, and a central zone where Defenders spawn. On Round
+                        Start, Defenders can access the sites, which are on opposite sides of the map. Attackers all spawn in
+                        one area, but can reach the other side by using the cross-map ziplines that take them underneath Defender
+                        Spawn. During the Buy Phase, Defenders are unable to hear Attackers using the ziplines.
+                    </p>
+                    <p>
+                        Each quadrant contains one orb, meaning Fracture has a total of four orbs as opposed to the usual total of
+                        two orbs that are present on most other maps.
+                    </p>
+                    <p>
+                        A Hall contains an automatic door that works similarly to the exit room doors for Bind's teleporters, as it
+                        will instantly open once a player gets close enough, making a loud audio cue as it does, and will also open
+                        for any abilities thrown towards it. This door on Fracture however will also open for entities on both sides
+                        of the door.
+                    </p>
+
+                    <h4>Ziplines</h4>
+                    <p>
+                        Fracture features two parallel one-way ziplines that bisect the map. These ziplines do not act like ziplines
+                        found on other maps, and have special rules to their interactions:
+                    </p>
+                    <ul>
+                        <li>Upon attaching, the player will automatically move across the zipline at full speed</li>
+                        <li>Whilst attached, players cannot:</li>
+                        <ul>
+                            <li>Change directions</li>
+                            <li>Use abilities</li>
+                            <li>Detach</li>
+                            <li>Stop (although you can still slow yourself down holding Shift)</li>
+                        </ul>
+                        <li>
+                            If the spike carrier drops the spike or gets killed whilst using the ziplines, the spike will respawn on
+                            the closer side of the zipline.
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="mapHaven">
+                    <h2 id="Haven">Haven</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/havenMap1.webp" alt="image of the map: Haven">
+                    <p>
+                        Haven's unique features include an additional third spike site. This does not affect the number of ultimate
+                        orbs on the map; Haven's two ultimate orbs are present in A Long and C Long.
+                    </p>
+                    <p>
+                        The doors at Mid also have destructible panels covering them. Whilst intact, they absorb damage and cannot
+                        be penetrated by gunfire. The panels however have 400 HP each and can be damaged, with colored indicators on
+                        them implying how much health they have left (starts blue, then turns yellow and then red as they take more
+                        damage). They can eventually be destroyed to allow players to wallbang through these doors for the rest of
+                        the round.
+                    </p>
+                </div>
+
+                <div id="mapLotus">
+                    <h2 id="Lotus">Lotus</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/lotusMap1.jpeg" alt="image of the map: Lotus">
+                    <p>
+                        Lotus contains multiple features spread out across the map. It's VALORANT's second three-site map but unlike
+                        the game's first three-site map of Haven, Lotus has a third ultimate orb available to be claimed at mid.
+                    </p>
+                    <p>
+                        Two of the map's features are present at the back of A Site. A rope ascender is available to take players
+                        from A Site to A Top. When players go down from A Top to A Drop, their fall is silenced.
+                    </p>
+                    <p>
+                        A unique feature to Lotus is its rotating doorways. It has one on A Side standing between A Main and A Tree,
+                        and another on C Side standing between C Mound and B Main. The doors can be activated from either side using
+                        a toggle button, at which point the door will rotate 180° over 8 seconds, giving players a small window where
+                        they can pass through to the other side.
+                    </p>
+                    <p>
+                        A destructible wall also stands between A Main and A Link. Whilst intact, it absorbs damage and cannot be
+                        penetrated by gunfire. The wall however has 400 HP and can be damaged, with colored indicators on it implying
+                        how much health it has left (starts blue, then turns yellow and then red as it takes more damage). It can
+                        eventually be destroyed to allow players to pass through a passageway between A Main and A Link for the rest
+                        of the round.
+                    </p>
+                </div>
+
+                <div id="mapPearl">
+                    <h2 id="Pearl">Pearl</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/pearlMap1.webp" alt="image of the map: Pearl">
+                    <p>
+                        Pearl is a two-site three-lane map. Following on from the release of more strategically complex maps like
+                        Icebox, Breeze, and Fracture, Pearl is designed as a more traditional map. As a result, Pearl is the first
+                        map to be released that does not contain any dynamic elements or mechanical hooks for gameplay.
+                    </p>
+                </div>
+
+                <div id="mapSplit">
+                    <h2 id="Split">Split</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/splitMap1.png" alt="image of the map: Split">
+                    <p>
+                        Split was the first map to use ascenders (vertical ropes). There are three sets on the map:
+                    </p>
+                    <ul>
+                        <li>Two that allow players to get up from Sewer to A Lobby</li>
+                        <li>One that allows players to get up from B Hell to B Tower</li>
+                        <li>Four that allow players to navigate through Vents</li>
+                    </ul>
+                </div>
+
+                <div id="mapTheRange">
+                    <h2 id="TheRange">The Range</h2>
+                    <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/theRangeMap1.webp" alt="image of the map: The Range">
+                    <p>
+                        The Range is a practice map where players can test their skills with the parkour course, train your spike
+                        planting/defusing skills, test different abilities on every agent, and try out different weapons.
+                    </p>
+                </div>
+            </div>
+
+            <h2>Not in Rotation</h2>
+            <div id="mapBreeze">
+                <h2 id="Breeze">Breeze</h2>
+                <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/breezeMap1.webp" alt="image of the map: Breeze">
+                <p>
+                    Breeze's 'unique' features are present on the A side of the map, mostly to do with A Hall. There are ropes to get
+                    players into A Hall. On the defending side players can use the rope at the back of A Site to get onto Bridge and
+                    into Hall, and on the attacking side players can use the rope in A Lobby to get into Hall.
+                </p>
+                <p>
+                    A Site has an impenetrable, indestructible mechanical door leading into A Hall that can be opened and closed using
+                    switches on either side. The door is closed at the start of each round.
+                </p>
+                <p>
+                    Towards the Attacker side of Hall is a one-way chute (also known as a 'vent') that can be used to go to Mid.
+                </p>
+            </div>
+            <div id="mapIcebox">
+                <h2 id="Icebox">Icebox</h2 >
+                <img id="mapImage" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/maps/iceboxMap1.webp" alt="image of the map: Icebox">
+                <p>
+                    Icebox is the first map to introduce horizontal ziplines, seen at the A Site. Each Icebox site is a complex
+                    combat space that features plenty of cover and verticality. This map emphasizes skirmishes, sharp aim, and
+                    adaptive play.
+                </p>
+                <p>
+                    It is also the first map where the plant site has different levels of elevation. Both sites contain nests that
+                    players can get into using ropes and then plant the spike on the nest floor.
+                </p>
+            </div>
+        </div>
+        <div>
+            <!-- empty div for positioning of the footer caused by display: grid -->
+        </div>
+        <div>
+            <!-- empty div for positioning of the footer caused by display: grid -->
+        </div>
+        <!-- add disclaimer somewhere for info taken from VALOWiki-->
+        <footer>
+            <p>DISCLAIMER~All the information on this page can be found on <a href="https://valorant.fandom.com/wiki/Maps">VALORANTWiki</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles-agents.css">
+    <link rel="stylesheet" href="styles-universal.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Valorant Info homepage</title>
+</head>
+
+<header>
+    <nav>
+        <ul id="navbarList">
+            <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/homepage.html">
+                <img id="valLogo" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/valorant-logo-2.png" alt="valorant logo">
+            </a>
+
+            <div></div>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/homepage.html">Home</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/Agents.html">Agents</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/Maps.html">Maps</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/gameModes.html">Game Modes</a>
+            </li>
+
+            <li>
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/survey.html">Help Us Out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body class="bgPattern">
+    <!-- Valorant Agents Banner -->
+    <img id="agentsBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/banners/agents-banner3.webp" alt="Valorant Agents Banner" >
+
+
+    <div id="splitPage">
+        <div id="sidebar">
+            <div id="sidebarSticky">
+                <h2>Roles</h2>
+
+                <ul>
+                    <li>
+                        <a href="#Controller">Controller</a>
+                        <ul>
+                            <li><a href="#Astra">Astra</a></li>
+                            <li><a href="#Brimstone">Brimstone</a></li>
+                            <li><a href="#Harbor">Harbor</a></li>
+                            <li><a href="#Omen">Omen</a></li>
+                            <li><a href="#Viper">Viper</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#Duelists">Duelists</a>
+                        <ul>
+                            <li><a href="#Jett">Jett</a></li>
+                            <li><a href="#Neon">Neon</a></li>
+                            <li><a href="#Phoenix">Phoenix</a></li>
+                            <li><a href="#Raze">Raze</a></li>
+                            <li><a href="#Yoru">Yoru</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#Initiators">Initiator</a>
+                        <ul>
+                            <li><a href="#Breach">Breach</a></li>
+                            <li><a href="#Fade">Fade</a></li>
+                            <li><a href="#Gekko">Gekko</a></li>
+                            <li><a href="#KAY/O">Kayo</a></li>
+                            <li><a href="#Skye">Skye</a></li>
+                            <li><a href="#Sova">Sova</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#Sentinel">Sentinel</a>
+                        <ul>
+                            <li><a href="#Chamber">Chamber</a></li>
+                            <li><a href="#Cypher">Cypher</a></li>
+                            <li><a href="#Killjoy">Killjoy</a></li>
+                            <li><a href="#Sage">Sage</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="MainContents">
+            <h1>Roles</h1>
+
+            <div id="Controller">
+
+                <h2>Controllers</h2>
+
+                <p>
+                    Controllers are delegated the role of providing cover and/or denying vision for the players in the
+                    game. They all have utility to deny vision by placing smokes on the map. While they all have a "smoking"
+                    ability, the way each character implements this ability is unique. As we go over each agent, we'll discuss each
+                    agents abilities, and how their smoking ability is implemented.
+                </p>
+                <img id="roleBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/valorant-controllers-banner2.jpeg" alt="controller banner">
+
+                <div id="ControllerAgents">
+                    <div id="Astra">
+                        <h3>Astra</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Astra/Astra-Banner.jpeg" alt="Astra Banner">
+
+                        <p>
+                            Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her
+                            whim. With full command of her astral form and a talent for deep strategic foresight, she's
+                            always eons ahead of her enemy's next move. Astra has four abilities: GRAVITY WELL, NOVA PULSE,
+                            NEBULA and DISSIPATE, and her Unique ability/Ultimate ability ASTRAL FORM/COSMIC DIVIDE. Even
+                            when comparing all the controllers with each other, Astra is uniquely different from the rest.
+                            With her unique ability Astral Form, Astra enters an Astral Form and is able to place "stars"
+                            on the map and with these "stars" Astra is able to activate any one of her abilities on these
+                            "stars". Gravity Well pulls players within the radius of the ability towards the center before
+                            it explodes. Any players trapped inside will become fragile and will take more damage for a
+                            short amount of time. Nova Pulse charges for a brief amount of time and will concuss all players
+                            within the radius of the ability. Concussed players will have vision blur, reduced movement speed,
+                            and slower fire-rate. Nebula is Astra's signature ability and her smoking ability. There will be a
+                            smoke placed where the "star" was placed and it will deny vision for a brief amount of time. Dissipate
+                            allows Astra players to retrieve their "star" to be placed somewhere else after a cooldown duration.
+                            When players retrieve their "stars" it'll leave a smoke that will last an even shorter duration than
+                            the Nebula ability. The inside of Nebula is hollow , which means that if 2 players were to walk into
+                            Nebula they will be able to see each other in the smoke. Astra's Ultimate Ability is called Cosmic
+                            Divide. You'll need to charge this ability up by killing enemies, planting the bomb or dying. Each
+                            of previous actions will provide the ability with 1 charge. Cosmic Divide creates an infinite wall
+                            that blocks bullets from going through and heavily dampens audio from the other side of the wall.
+                            However abilities are still free to travel through the wall.
+                        </p>
+
+                        <h4>GRAVITY WELL</h4>
+                        <iframe id="gravityWellVid" src="https://giphy.com/embed/1kvKWuNOihlNpXGClG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                        <h4>NOVA PULSE</h4>
+                        <img id="novaPulseVid" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Astra/astra-pulse-nova.jpg" alt="image of astra's ability NOVA PULSE">
+
+                        <h4>NEBULA and DISSIPATE</h4>
+                        <img id="nebulaAndDissipateVid" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Astra/valorant-astra-nebula:dissipate-img.jpeg" alt="image of astra's abilities NEBULA and DISSIPATE">
+
+                        <h4>ASTRAL FORM</h4>
+                        <iframe id="astralFormVid" src="https://giphy.com/embed/xvRPIAtMwKQ2SlxKtx" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+                        <h4>Cosmic Divide</h4>
+                        <img id="cosmicDivideImg" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Astra/valorant-astra-cosmic-divide.jpg" alt="image of Astra's Ultimate Cosmic Divide">
+                    </div>
+
+                    <div id="Brimstone">
+                        <h3>Brimstone</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Brimstone/Valorant_Brimstone_Banner.jpg" alt="Brimstone Banner">
+
+                        <p>
+                            Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the
+                            advantage. His ability to deliver utility precisely and from a distance makes him
+                            an unmatched boots-on-the-ground commander. Brimstone has four abilities: Stim Beacon,
+                            Incendiary, Sky Smoke, and his ultimate ability Orbital Strike. Brimstone is the mosst
+                            straight forward of all the controllers, his kit is simple and as straightforward as it
+                            can get to use. Stim Beacon instantly tosses down a stim beacon. Upon landing, it creates
+                            a field that grants players a combat stim and a speed boost. Incendiary fires a grenade
+                            that detonates as it comes to a rest on the floor, creating a lingering fire zone that
+                            damages players within the zone. Some players create lineups with this ability so that
+                            they can fire it from a safe distance away from a bomb plant to safely win rounds for
+                            the team, others will find line ups to prevent the enemy team from planting the bomb.
+                            Brimstone's signature ability Sky smokes fires to set locations where Brimstone's smoke
+                            clouds will land, alternate fire to confirm, launching long-lasting smoke clouds that
+                            block vision in selected areas. The inside of sky smoke contains debris, making it hard
+                            for players inside to smoke to see each other until they're in close proximities.
+                            Brimstone's Ultimate ability is called Orbital Strike,like Asta's ability this ability
+                            will need to be charged via kills, deaths, and/or bomb plants/defuses. Orbital Strike
+                            launches a lingering orbital strike laser at a targeted location, dealing high
+                            damage-over-time to players caught within the area. This ability can be used as a safety
+                            net to prevent enemies from planting/defusing the bomb from a safe distance away or it
+                            may be used to prevent enemies from taking a certain chokepoint.
+                        </p>
+
+                        <h4>STIM BEACON</h4>
+                        <video  controls="">
+                            <source id="stimBeaconVid" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc34c3d692ea83f41/5ecad7d0177c51692beb1fe4/Brimstone_C_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>INCENDIARY</h4>
+                        <video id="incendiaryVid" controls="">
+                            <source id="incendiaryVid" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte2b9eb1923ef64fa/5ecad7d0f5bd13348a6cac75/Brimstone_Q_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>SKY SMOKE</h4>
+                        <video id="skySmokeVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltcf4359fed083686b/5ecad7d198f79d6925dbee07/Brimstone_E_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>ORBITAL STRIKE</h4>
+                        <video id="orbitalStrikeVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3d19d83ba51eb18f/5ecad7d297b46c1911ad1868/Brimstone_X_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+
+                    <div id="Harbor">
+                        <h3>Harbor</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Harbor/harborBanner2.webp" alt="Harbor Banner">
+
+                        <p>
+                            Hailing from India's coast, Harbor storms the field wielding ancient technology with
+                            dominion over water. He unleashes frothing rapids and crushing waves to shield his
+                            allies and to pummel those that oppose him. Harbor's four abilities are: CASCADE, COVE,
+                            his signature ability HIGH TIDE, and his ultimate ability RECKONING. Harbor is the newest
+                            addition to the controllers, While his kit mainly focuses on denying vision, it can also
+                            be used to create opportunities for your team. Cascade equips a wave of water, when fired
+                            it sends a wave of water rolling forward and through walls. Reactivate the ability to stop
+                            the wall of water at it's current position, when players walk through or hit by the wave
+                            they are slowed for a short period of time. Cove fires a sphere of shielding water, fire
+                            to throw the orb normallying and alternate-fire to throw it underhand. Upon impact the sphere
+                            a destructible water shield that will block a certain amount of bullets. This ability can be
+                            used to smoke off chokepoints or can be used to protect an ally planter/defuser. High tide
+                            equips a wall another wall of water, fire to send the water forward along the ground. Hold
+                            the fire button to guide the water in the direction of your crosshair, passing through the
+                            world, spawning a wall along the water's path. Alternate-fire while bending to stop the water
+                            early, players that walk through or hit by the wall is slowed for a short duration. Like every
+                            other agent, Habor's ultimate needs to be charged via kills, deaths and/or bomb plants/defuses.
+                            Harbor's Ultimate Ability is called Reckoning, reckoning equips the full power of your
+                            artifact, fire to summon a geyser pool on the ground. Enemy players in the area are targeted
+                            by successive geyser strikes. Player caught within a strike are concussed, players that are
+                            concussed will have screen distortion (player view may be blurred and/or shaky), hearing
+                            impairment (temporary deafness), and movement impairment (players are slowed or partially
+                            restricted).
+                        </p>
+
+                        <h4>CASCADE</h4>
+                        <video id="cascadeVid" autoplay="false" class="" playsinline="" loop="loop" muted="" poster="https://cdnportal.mobalytics.gg/production/2022/07/691937cf-la_3.jpg">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿
+                            </span>
+                            <source data-src="https://cdnportal.mobalytics.gg/production/2022/11/fb4fce00-left-and-right-gif.mp4" src="https://cdnportal.mobalytics.gg/production/2022/11/fb4fce00-left-and-right-gif.mp4">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_end">﻿</span>
+                        </video>
+
+                        <h4>COVE</h4>
+                        <video id="coveVid" autoplay="false" class="" playsinline="" loop="loop" muted="" poster="https://cdnportal.mobalytics.gg/production/2022/07/691937cf-la_3.jpg">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span>
+                            <source data-src="https://cdnportal.mobalytics.gg/production/2022/11/f849ffbf-cove-drop-ledge-asecent.mp4" src="https://cdnportal.mobalytics.gg/production/2022/11/f849ffbf-cove-drop-ledge-asecent.mp4">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_end">﻿</span>
+                        </video>
+
+                        <h4>HIGH TIDE</h4>
+                        <video id="highTideVid" autoplay="false" class="" playsinline="" loop="loop" muted="" poster="https://cdnportal.mobalytics.gg/production/2022/07/691937cf-la_3.jpg">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span>
+                            <source data-src="https://cdnportal.mobalytics.gg/production/2022/11/39fe9c57-curve-the-wall-to-cover-gif.mp4" src="https://cdnportal.mobalytics.gg/production/2022/11/39fe9c57-curve-the-wall-to-cover-gif.mp4">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_end">﻿</span>
+                        </video>
+
+                        <h4>RECKONING</h4>
+                        <video id="reckoningVid" autoplay="false" class="" playsinline="" loop="loop" muted="" poster="https://cdnportal.mobalytics.gg/production/2022/07/691937cf-la_3.jpg">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span>
+                            <source data-src="https://cdnportal.mobalytics.gg/production/2022/11/0c216cba-large-area-of-reckoning-gif.mp4" src="https://cdnportal.mobalytics.gg/production/2022/11/0c216cba-large-area-of-reckoning-gif.mp4">
+                            <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_end">﻿</span>
+                        </video>
+                    </div>
+
+                    <div id="Omen">
+                        <h3>Omen</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Omen/omenBanner2.png" alt="Omen Banner">
+
+                        <p>
+                            A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across
+                            the field, then lets paranoia take hold as his foe scrambles to learn where he might strike
+                            next. Omen's four abilities are: SHROUDED STEP, PARANOIA, his signature ability DARK COVER,
+                            and his ultimate ability FROM THE SHADOWS. Omen's kit is the most versatile among the controllers.
+                            His abilities can be used more aggressively and/or passively depending on the player. Shrouded step
+                            allows Omen to teleports to a marked location after a brief channel. This ability can be used
+                            to get away from a dangerous situation, and/or used to aggressively take space to obtain a more
+                            favorable/unexpected angle to suprise enemies. Paranoia allows Omen to equips a blinding orb that
+                            travels through obstacles, fire to throw it forward in a straight line, briefly nearsighting and
+                            deafening all players it touches. Omen's signature ability Dark Cover, equips a shadow orb, entering
+                            a phased world to place and target the orbs. Press the ability key to fire the shadow orb to the marked
+                            location, creating a long-lasting shadow sphere (smoke) that blocks vision. The inside of Dark Cover
+                            is hollow, so players hiding inside the smoke can see anyone entering the smoke before they can see
+                            the player hiding in the smoke. Omen's Dark Cover ability is considered a projectile, which means that
+                            it can break some obstacles in the game. Omen players can use this neat trick on Ascent to fake position
+                            and catch enemies offguard on Ascent. Dark Cover is also the easiest smoking ability to create one ways,
+                            meaning that you can place smokes to your advantage where you can see enemy's lower portion of their body
+                            while from their perspective they can't see anything. Omen's ultimate ability like the others need to be
+                            charged via kills, death, and/or plant/defuses of the bomb. Omen's ultimate ability From the Shadows
+                            allows the player to teleport to a targeted location anywhere on the map. While teleporting Omen will
+                            appear as a Shade that can be destroyed by an enemy to cancel his teleport, or if omen reactivates his
+                            ability to cancel the teleport.
+                        </p>
+
+                        <h4>SHROUDED STEP</h4>
+                        <video id="shroudedStepVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63486e54ea52945a/5ecad815bab1845d392dfd07/Omen_C_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>PARANOIA</h4>
+                        <video id="paranoiaVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5babc7e7c6c24fa0/5ecad8154a28e119db56229e/Omen_Q_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>DARK COVER</h4>
+                        <video id="darkCoverVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70e2c9db1c0793df/5ecad815c846021917ecbb85/Omen_E_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>FROM THE SHADOWS</h4>
+                        <video id="fromTheShadowsVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt65aa85bf6ba5c0e8/5ecad814a4fe135d37f021a3/Omen_X_v001_web.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Viper">
+                        <h3>Viper</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/controllers/Viper/viperbanner2.jpeg" alt="Viper Banner">
+
+                        <p>
+                            The American chemist, Viper deploys an array of poisonous chemical devices to control the
+                            battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games
+                            surely will. Viper's four abilities are: SNAKE BITE, POISON CLOUD, her signature ability
+                            is TOXIC SCREEN, and her ultimate ability is VIPER'S PIT. Viper's the only controller as of
+                            right now that has passive abilities. Her passive abilities are Fuel and Toxin. Viper's passive
+                            Fuel and Toxin work as a single passive. While fuel gradually generates and replenishes her
+                            toxins (passive ability) that fuel her abilities, toxin inflict enemies that come into
+                            contact with poison cloud, toxic screen, and vipers pit with decay. Players that are decayed
+                            lose 30 health instantly and then 10 health per second for every addition second they're in
+                            contact with the abilities mentioned above. Snake bite allows viper to launch a chemical canister
+                            that shatters upon hitting the floor, creating a lingering chemincal zone that damages and applies
+                            Vulnerability. Players that are Vulnerable take more damage from bullets and other abilities.
+                            Poison Cloud throws a gas emitter that perpetually remains throughout the round. Alternate-fire
+                            to lob the emitter. Re-use the ability to create a toxic gas cloud at the cost of Fuel. Poison
+                            Cloud can be use more than once and can be picked up to be redeployed. Viper players will generally
+                            place their Poison Cloud on top of the bomb so that it can be used in conjunction with her Snake
+                            Bites. This is because her snake bite ability by itself is not strong enough to kill an enemy
+                            that has full health, while using it in conjunction with the Poison Cloud, the decay helps
+                            amplify Snake Bite's damage. Vipers signature ability Toxic Screen equips a gas emitter launcher
+                            that penetrates terrain, it deploys a long line of gas emitters. Re-activate ability to create
+                            a tall wall of toxic gas at the cost of Fuel. This ability can also be used more than once.
+                            Viper's ultimate ability Viper's Pit needs to be charged like every other ultimate ability via kills,
+                            deaths, and/or bomb plants/defuses. Viper's Pit allows viper to equip a chemical sprayer. Fire the
+                            ability to spray a chemical cloud in all directions around the targeted area, creating a large cloud
+                            that nearsights players and decays the health of enemies inside it. Hold the ability key to disperse
+                            the chemical cloud early.
+                        </p>
+
+                        <h4>SNAKE BITE</h4>
+                        <video class="wp-video-shortcode" id="snakeBiteVid" width="640" height="360" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5e70987e8ac2f2d6/5ecad893722d20585b2f4a4c/Viper_C_v001_web.mp4?_=1">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5e70987e8ac2f2d6/5ecad893722d20585b2f4a4c/Viper_C_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5e70987e8ac2f2d6/5ecad893722d20585b2f4a4c/Viper_C_v001_web.mp4</a>
+                        </video>
+
+                        <h4>POISON CLOUD</h4>
+                        <video class="wp-video-shortcode" id="poisonCloudVid" width="640" height="360" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte5200bab40679f96/5ecad8935e73766852c8ed94/Viper_Q_v001_web.mp4?_=2">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte5200bab40679f96/5ecad8935e73766852c8ed94/Viper_Q_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte5200bab40679f96/5ecad8935e73766852c8ed94/Viper_Q_v001_web.mp4</a>
+                        </video>
+
+                        <h4>TOXIC SCREEN</h4>
+                        <video class="wp-video-shortcode" id="toxicScreenVid" width="640" height="360" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt66a45c1fe76ca647/5ecad893957e405e0990575d/Viper_E_v001_web.mp4?_=3">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt66a45c1fe76ca647/5ecad893957e405e0990575d/Viper_E_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt66a45c1fe76ca647/5ecad893957e405e0990575d/Viper_E_v001_web.mp4</a>
+                        </video>
+
+                        <h4>VIPER'S PIT</h4>
+                        <video class="wp-video-shortcode" id="vipersPitVid" width="640" height="360" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt41c75111b2eac6b5/5ecad8923a450a58554b7078/Viper_X_v001_web.mp4?_=4">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt41c75111b2eac6b5/5ecad8923a450a58554b7078/Viper_X_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt41c75111b2eac6b5/5ecad8923a450a58554b7078/Viper_X_v001_web.mp4</a>
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Duelists">
+
+                <h2>Duelists</h2>
+                <p>
+                    Duelists are agents that are designated to take aggressive fights and put pressure on the enemy team. Their
+                    primary role is to enter sites and engage in combat, providing their team with early map control and fragging
+                    potential. They are typically equipped with abilities that allow them to take fights on their own terms and to
+                    push past enemy defenses. This makes them effective at creating openings and disrupting the enemy's setup.
+                    Duelists are often relied upon to secure early picks and to trade kills effectively. They require strong
+                    mechanical skills, game sense, and map knowledge to excel in their role. Each duelist has a unique set of
+                    abilities that complement their playstyle, and we'll explore these abilities in more detail as we review each
+                    agent.
+                </p>
+               <img id="roleBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Duelists Banner 1.jpeg">
+
+                <div id="DuelistsAgents">
+
+                    <div id="Jett">
+                        <h3>Jett</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Jett/JettBanner2.jpeg" alt="Jett Banner">
+
+                        <p>
+                            Representing her home country of South Korea, Jett's agile and evasive fighting style lets
+                            her take risks no one else can. She runs circles around every skirmish, cutting enemies before
+                            they even know what hit them. Jett's Kit is the most straight forward of the duelists but also
+                            takes some time to get used to. Jett has five abilities: CLOUD BURST, UPDRAFT, her signature
+                            ability TAILWIND, her ultimate ability BLADE STORM and her passive ability DRIFT. Drift allows
+                            jett to glide through the air while falling by holding space button. This can help Jett players
+                            get on to elevated surfaces without the use of her updraft ability. Cloud burst allows
+                            Jett to instantly throw a projectile that expands into a brief vision-blocking cloud on impact with
+                            a surface. Hold the ability key to curve the smoke in the direction of your crosshair. Updraft propels
+                            jett upwards high into the air. Her signature ability tailwind prepares a gust of wind for a limited
+                            time. Re-use the ability to propel Jett in the direction that she's moving. If Jett is standing still
+                            she will be propelled forward. This ability is generally used as a repositioning tool when taking gun
+                            fights. It allows Jett to take an aggressive fight and get out if the fight is unfavorable for her.
+                            Jett's Ultimate ability needs to be charges via kills, deaths, and/or bomb plants/defuses before it can
+                            be used. Her Ultimate Ability Blade Storm equips a set of highly accurate throwing knives, fire to throw
+                            a single knife and recharge the set on kill. Alternate fire to fire all the knives but does not
+                            recharge on kill. Jett players can take favorable fights with Blade Storm by using her ultimate in
+                            conjunction with updraft, drift, and tailwind because of the high accuracy of Blade Storm.
+                        </p>
+
+                        <h4>DRIFT</h4>
+                        <a href="https://cdnportal.mobalytics.gg/production/2021/07/9723b2c3-haven-c-updraft-gif.gif">
+                            <img id="driftVid" loading="lazy" class="aligncenter size-full wp-image-38030" src="https://cdnportal.mobalytics.gg/production/2021/07/9723b2c3-haven-c-updraft-gif.gif" alt="gif of jett's passive drift">
+                        </a>
+
+                        <h4>CLOUD BURST</h4>
+                        <video id="cloudBurstVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb15019d03f48b8c3/5ecad7f7beb6c333c3a0f59d/Jett_C_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>UPDRAFT</h4>
+                        <video id="updraftVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2c46e5d7a51be140/5ecad7f552c5395e0f2dd0de/Jett_Q_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>TAILWIND</h4>
+                        <video id="tailwingVid" controls="">
+                            <source src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Jett/Jett_tailwind_rework_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>BLADE STORM</h4>
+                        <video id="bladeStormVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta43d8d506e2f5e00/5ecad7f6957e405e0990574d/Jett_X_v001_web.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Neon">
+                        <h3>Neon</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Neon/NeonBanner2.jpeg" alt="Neon Banner">
+
+                        <p>
+                            Filipino Agent, Neon, surges forward at shocking speeds, discharging bursts of bioelectric radiance as
+                            fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down
+                            quicker than lightning. While Neon's kit is also straight forward it's very difficult to use her
+                            abilities in conjunction. Neon's five abilities are: FAST LANE, RELAY BOLT, her signature ability HIGH
+                            GEAR, her ultimate ability OVERDRIVE, and her passive ability ENERGY. Energy is the fuel used to power
+                            Neon's abilities High Gear and Overdrive. Using those abilities gradually consume Energy and getting a
+                            kill instantly recharges Energy. Fast Lane allows Neon to fire two energy lines forward on the ground
+                            that extends a short distance or until they hit a surface. The lines rise into walls that block vision.
+                            Relay allows Neon to instantly fire an energy bolt that bounces off any surface once. Upon hitting each
+                            surface, the bolt shocks the area below and above with a concussive blast. Players that are concussed
+                            have blurred vision and shaky screen, slowed movement speed, and a slower fire rate. Neon's signature
+                            ability High Gear instantly channels Neon's powers for increased speed. When charged alternate-fire to
+                            trigger an electric slide. The slide recharges every 2 kills. If this ability is used with a expert
+                            proficiency in movement manuevers it makes Neon a very hard target to hit. Neon's ultimate ability
+                            needs to be charged via kills, deaths, and/or bomb plants/defuses. Neon's ultimate ability Overdrive
+                            unleashes Neon's full power and speed for a short duration. Fire to channel the power into a deadly
+                            lightning beam with high movement accuracy.
+                        </p>
+
+                        <h4>ENERGY</h4>
+                        <img id="energyImg" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Neon/neonChargeBar.png" alt="image of Neon's passive ability ENERGY">
+
+                        <h4>FAST LANE</h4>
+                        <video id="fastLaneVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt023814e24e6cad2f/61d8a98914ef402247ceab3a/VAL_Neon_Ability-C_Preview_Walls_noHUD_Web_h264.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>RELAY BOLT</h4>
+                        <video id="relayBoltVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf634e203f29987a5/61d8a91abf9cb8387cc1d9c8/VAL_Neon_Ability-Q_Preview_Stun_noHUD_Web_h264.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>HIGH GEAR</h4>
+                        <video controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt99e20f893b806cc8/61d8a9608aabbf6426b7523a/VAL_Neon_Ability-E_Preview_Sprint_noHUD_Web_h264.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>OVERDRIVE</h4>
+                        <video controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltcbe0e9c4b801f025/61d8a9dfef206c6c5e4941ba/VAL_Neon_Ability-X_Preview_Ult_noHUD_Web_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Phoenix">
+                        <h3>Phoenix</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Phoenix/phoenixBanner1.avif" alt="Phoenix Banner">
+
+                        <p>
+                            Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the
+                            battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his
+                            own terms. Although Phoenix's curving flashing ability may take some time to master, once you become
+                            proficient in using it, he can be a highly valuable addition to any team composition. Phoenix's five
+                            abilities are: BLAZE, CURVE BALL, his signature ability HOT HANDS, his ultimate ability RUN IT BACK,
+                            and his passive ability HEATING UP. Phoenix's passive ability, Heating Up allows Phoenix to passively
+                            heal himself instead of taking damage when standing in his own fire. Blaze equips a flame wall, fire
+                            to create a line of flames that move forward, creating a wall of fire that blocks vision and damages
+                            players passing through it. Hold fire to bend the wall in the direction of your crosshair. Curveball
+                            equips a flare ball that takes a curving path and detonates shortly after throwing. Fire to curve the
+                            flare orb to the left, detonating and Blinding any players who see the orb. Players that are blind
+                            can't see anything on the screen for a short amount of time. Alternate-fire to curve the flare orb to
+                            the right. Phoenix's signature ability Hot Hands, equips a fireball that explodes after a set amount
+                            of time or upon hitting the ground, creating a lingering fire zone that damages enemies. Alternate fire
+                            to lob the fire ball instead of throwing it. Phoenix's ultimate ability Run It Back needs to be charges
+                            just like all the other ultimate abilities via kills, deaths, and/or bomb plants/defuses. Run It Back
+                            instantly places a marker at his current location, while this ability is active, dying or allowing the
+                            timer to expire will end this ability and bring Phoenix back to the location with full health and the
+                            amount of armor he had when the ability was cast.
+                        </p>
+
+                        <h4>HEATING UP</h4>
+                        <img id="heatingUpImg" src="https://cdn.esportsdriven.com/media/upload/images/2022-12-24_1_cqHXjk1.large.png" alt="image of Phoenix's passive ability HEATING UP">
+
+                        <h4>BLAZE</h4>
+                        <iframe id="blazeVid"width="1064" height="608" src="https://www.youtube.com/embed/ousGcmeciRQ" title="Valorant &amp; Phoenix - Blaze" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                        <h4>CURVE BALL</h4>
+                        <a href="https://www.pcinvasion.com/wp-content/uploads/2020/06/Phoenix-high-Curveball.gif?resize=600%2C338" data-featherlight="https://www.pcinvasion.com/wp-content/uploads/2020/06/Phoenix-high-Curveball.gif?resize=600%2C338">
+                            <img id="curveBallGif" decoding="async" loading="lazy" class="aligncenter size-full wp-image-219428" src="https://www.pcinvasion.com/wp-content/uploads/2020/06/Phoenix-high-Curveball.gif?resize=600%2C338" alt="Phoenix High Curveball" width="600" height="338" data-recalc-dims="1" pinger-seen="true">
+                        </a>
+                        <h4>HOT HANDS</h4>
+                        <iframe id="hotHandsVid" width="1080" height="608" src="https://www.youtube.com/embed/C6GEGAy7xP0" title="Valorant &amp; Phoenix - Hot Hands" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                        </iframe>
+
+                        <h4>RUN IT BACK</h4>
+                        <a href="https://www.pcinvasion.com/wp-content/uploads/2020/06/Phoenix-Run-it-Back-teleporter-trick.gif?resize=600%2C338" data-featherlight="https://www.pcinvasion.com/wp-content/uploads/2020/06/Phoenix-Run-it-Back-teleporter-trick.gif?resize=600%2C338">
+                            <img id="runItBackGif" aria-describedby="caption-attachment-219427" decoding="async" loading="lazy" class="wp-image-219427 size-full" src="https://www.pcinvasion.com/wp-content/uploads/2020/06/Phoenix-Run-it-Back-teleporter-trick.gif?resize=600%2C338" alt="Phoenix Run It Back Teleporter Trick" width="600" height="338" data-recalc-dims="1" pinger-seen="true">
+                        </a>
+                    </div>
+
+                    <div id="Raze">
+                        <h3>Raze</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Raze/RazeBanner1.jpeg" alt="Raze Banner">
+
+                        <p>
+                            Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma
+                            playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose
+                            of “boom". Raze possesses the most explosive kit out of all the duelists, as her abilities revolve
+                            around explosives. She can utilize these explosives to propel herself forward or deal massive damage
+                            to enemies. Unlike the previously dueslists raze on have four abilities: BOOMBOT, BLAST PACKS, her
+                            signature ability PAINT SHELLS, and her ultimate ability SHOWSTOPPER. Raze's first ability equips a
+                            Boom Bot, when the fire button is clicked it will deploy a bot, causing it to travel in a straight
+                            line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone
+                            and chase them, exploding for heavy damage if it reaches them. Blast pack allows Raze to instantly
+                            deploy a Blast Pack that will stick to surfaces, reusing the ability after deployment will detonate,
+                            damaging and moving anything it hit. Raze players often use this ability to quickly traverse the
+                            battlefield and gain a tactical advantage by propelling themselves forward into a site or directly
+                            at the enemy. Raze's signature ability, Paint Shells, equips her with a cluster grenade that explodes
+                            on impact, releasing smaller grenades that also detonate after a brief delay, dealing damage to enemies
+                            caught in their blast radius. To use the ability, press the fire button to throw it directly, or press
+                            the alternate-fire button to lob it. The ability will recharge after obtaining two kills. Raze's
+                            ultimate ability like the other agents needs to be charged via kills, deaths, and/or bomb
+                            plants/defuses. Raze's ultimate ability, Showstopper, equips her with a powerful rocket launcher that
+                            deals massive area damage upon impact with any surface. Skilled Raze players often use this ability
+                            in conjunction with Blast Packs to gain a strategic advantage by achieving a better angle for maximum
+                            splash damage.
+                        </p>
+
+                        <h4>BOOM BOT</h4>
+                        <video id="boombomVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3f7d7ee195ecedca/5ecad83c52c5395e0f2dd0e4/Raze_C_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>BLAST PACKS</h4>
+                        <video id="blastPacksVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf3581aedf43e1ce8/5ecad83cc846021917ecbb8d/Raze_Q_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>PAINT SHELLS</h4>
+                        <video id="paintShellsVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltfe61b821c26125b7/5ecad83be2a559592eb0c1ba/Raze_E_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>SHOWSTOPPER</h4>
+                        <video id="showstopperVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb15aa9cb086aed1a/5ecad83c4a28e119db5622a2/Raze_X_v001_web.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Reyna">
+                        <h3>Reyna</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Reyna/reynaBanner2.jpeg" alt="Reyna Banner">
+
+                        <p>
+                            Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores.
+                            Her capability is only limited by her raw skill, making her highly dependent on performance. Reyna's
+                            play style is focused on aggressive pushing and individual fragging, allowing her to move quickly and
+                            eliminate enemies with ease. She is best suited for players who are confident in their abilities to
+                            secure kills and want to play a high-risk, high-reward style. Reyna's five abilities are: LEER, her
+                            signature abilities are DEVOUR and DISMISS, her ultimate ability is called EMPRESS, and her passive
+                            ability is called SOUL HARVEST. Soul Harvest provides Reyna with Soul Orbs if they die to her, or die
+                            within 3 seconds of taking damage from Reyna. These Soul Orbs are then used for her signature abilities.
+                            Leer equips Reyna with an etheral, destructible eye. Activate the cast the eye a short distance forward.
+                            The eye will nearsight all enemies that are have the eye in their field of view. Reyna signature
+                            abilities are Devour and Dismiss. Devour instantly consumes a nearby soul orb, rapidly healing Reyna
+                            for a short duration and can be disrupted by taking damage. Health gained through this skill exceeding
+                            100 will decay over time. If her ultimate is active, this skill will automatically cast and will not
+                            consume the Soul Orb. Dismiss instantly consumes a nearby Soul Orb, becoming intangible for a short
+                            duration, while intangible Reyna cannot use and abilities/weapons and is immune to damage. If her
+                            ultimate is active, she will also become invisible when the ability is activated. Reyna's ultimate
+                            ability Empress needs to be charges via kills, deaths, and/or bomb plants/defuses. While Empress is
+                            active, Reyna instantly enters a frenzy, gaining a Combat Stim (faster fire rate and reload speed).
+                            She also gains infinite charges on her signature abilities. When an enemy dies to Reyna, or dies
+                            within 3 seconds of taking damage from Reyna, the duration of Empress is renewed.
+                        </p>
+
+                        <h4>SOUL HARVEST</h4>
+                        <img id="soulHarvestImg" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Reyna/soul-harvest-img.webp" alt="image of Reyna's passive ability SOUL HARVEST">
+
+                        <h4>LEER</h4>
+                        <img id="leerImg" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Reyna/leer-img.jpeg" alt="image of Reyna's ability LEER">
+
+                        <h4>DEVOUR</h4>
+                        <video class="wp-video-shortcode" id="devourVid" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb216220f42c804e2/5ecad85d4a28e119db5622a8/Reyna_Q_v001_web.mp4?_=2">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb216220f42c804e2/5ecad85d4a28e119db5622a8/Reyna_Q_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltb216220f42c804e2/5ecad85d4a28e119db5622a8/Reyna_Q_v001_web.mp4</a>
+                        </video>
+
+                        <h4>DISMISS</h4>
+                        <video class="wp-video-shortcode" id="dismissVid" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt77e99ec99ef3a839/5ecad85e2f5c725928765503/Reyna_E_v002_web.mp4?_=3">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt77e99ec99ef3a839/5ecad85e2f5c725928765503/Reyna_E_v002_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt77e99ec99ef3a839/5ecad85e2f5c725928765503/Reyna_E_v002_web.mp4</a>
+                        </video>
+
+                        <h4>EMPRESS</h4>
+                        <video class="wp-video-shortcode" id="empressVid" preload="metadata" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltadf53a38e449cb4d/5ecad85cbab1845d392dfd0f/Reyna_X_v001_web.mp4?_=4"><a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltadf53a38e449cb4d/5ecad85cbab1845d392dfd0f/Reyna_X_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltadf53a38e449cb4d/5ecad85cbab1845d392dfd0f/Reyna_X_v001_web.mp4</a>
+                        </video>
+                    </div>
+
+                    <div id="Yoru">
+                        <h3>Yoru</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/duelists/Yoru/yoruBanner1.png" alt="Yoru Banner">
+
+                        <p>
+                            Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using
+                            deception and aggression in equal measure, he gets the drop on each target before they know where
+                            to look. Yoru is the most disruptive and sneaky of the duelists. His abilities revolve around him
+                            distracting his opponents. Yoru like Raze doesn't have a passive. His four abilities are: FAKEOUT,
+                            BLINDSIDE, his signature ability GATECRASH, and his ultimate ability DIMENSIONAL DRIFT. Fakeout
+                            allows Yoru to equip an echo that transform into a mirror image of Yoru when activated. Fire to
+                            instantly activate the mirror image and send it forward. Alternate-fire to place an inactive echo.
+                            Use your interact key to transform an inactive echo into a mirror image and send it forward. Mirror
+                            images explode in a Blinding Flash when destroed by enemies. Blindside equips an unstable dimensional
+                            fragment from reality. The fire button throws the fragment, activating a flash that winds up once it
+                            collides with a hard surface. His signature ability Gatecrash equips a rift tether, fire to send the
+                            tether forward, alternate-fire to place a stationary tether activate the ability to teleport to the
+                            tether's location, use the interact key to trigger a fake teleport. Yoru's ultimate like the others
+                            needs to be charged via kills, death, and/or bomb plants/defuses. Yoru's ultimate ability Dimensional
+                            Drift equips a mask that can see between dimensions. The fire key allows Yoru to drift into his
+                            dimension, unable to be affected or seen by enemies from the outside. In Dimension Drift, Yoru players
+                            can use Gatecrash to teleport to a different site and retrieve the bomb if it was dropped in a
+                            hard-to-reach location surrounded by enemies. This allows for a quick and unexpected plant while also
+                            preventing the risk of trading lives to retrieve the bomb.
+                        </p>
+
+                        <h4>FAKEOUT</h4>
+                        <video id="fakeoutVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47c96a79f14605fc/62215aaed83ad851e8a9e09d/Website_Yoru_Rework_Fakeout_v2.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>BLINDSIDE</h4>
+                        <video id="blindsideVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9af4e1e3b962f7b4/5ff77b6fa703d10ab87ebb27/Yoru_Abilities_Blinding_1_1.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>GATECRASH</h4>
+                        <video id="gatecrashVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0945f456a2bcac77/62215a1f47e4d72e3e67ff1a/Website_Yoru_Rework_Gatecrash_v2.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>DIMENSIONAL DRIFT</h4>
+                        <video id="dimesionalDriftVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt95a89496da772b65/62215bbd6f0333490a0e7bec/Website_Yoru_Rework_Dimensional_Drift_v2.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="Initiators">
+                <h2>Initiators</h2>
+                <p>
+                    initiators are agents whose primary role is to start or initiate a fight with the enemy team. They use their
+                    abilities to gather information on enemy positions, create space for their team to move in, and make it
+                    difficult for the enemy team to hold a position. Although all initiators have the same role, their abilites
+                    vary so that their playstyles are very different from each other. We'll discuss the abilities in more detail
+                    as we review each agents.
+                </p>
+                <img id="roleBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/initiators-banner-2.png" alt="initiators banner">
+
+                <div id="InitiatorAgents">
+
+                    <div id="Breach">
+                        <h3>Breach</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Breach/breachBanner1.jpeg" alt="Breach Banner">
+
+                        <p>
+                            Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through
+                            enemy ground. The damage and disruption he inflicts ensures no fight is ever fair. Breach's playstyle
+                            revolves around creating opportunities for his team to take control of a site or gain an advantage in
+                            a firefight. His abilities that allow him to disrupt enemy positions and open up new angles of attack.
+                            Breach's four abilities are: AFTERSHOCK, FLASHPOINT, his signature ability FAULT LINES, and his ultimate
+                            ability ROLLING THUNDER. Aftershock equips a fusion charge into breach's arm and fires a slow-acting burst
+                            into any surface. The burst does heavy damage to anyone caught in its area. Flashpoint equips a blinding
+                            charge. Fire the charge to set a fast-acting burst through any surface. The charge detonates to blind all
+                            players looking at it. His signature ability Fault Lines equips a seismic blast, hold fire to increase the
+                            distance, release to set off the quake, concussing all players in its zone and in a line up to the zone.
+                            Breach's ultimate ability like the other ultimate abilities needs to be charges via kills, deaths, and/or
+                            bomb plants/defuses. Breach's ultimate ability Rolling Thunder equips a seismic charge. Fire button sends
+                            a cascading quake through all terrain in a large cone. The qukae concusses and knocks up anyone caught
+                            inside the zone. Players that are concussed have their vision blurred, movement speed slowed, and fire-rate
+                            slowed for a brief duration.
+                        </p>
+
+                        <h4>AFTERSHOCK</h4>
+                        <video controls="" id="aftershockVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltfff097ebc7da90e9/5ec840e1e2a559592eb0c0e2/Breach_C_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>FLASHPOINT</h4>
+                        <video id="flashpointVid" controls="">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc2d5631f1babcaf0/5ec840e1bab1845d392dfc39/Breach_Q_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>FAULT LINES</h4>
+                        <video controls="" id="faultLinesVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd09eb47222cc1152/5ec840e287617619e2be955e/Breach_E_v001_web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>ROLLING THUNDER</h4>
+                        <video controls="" id="rollingThunderVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0a47675f8b973fda/5ec840e252c5395e0f2dd038/Breach_X_v001_web.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Fade">
+                        <h3>Fade</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Fade/fadeBanner1.jpeg" alt="Fade Banner">
+
+                        <p>
+                            Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with
+                            terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the
+                            dark. Fade's playstyle specializes in pinpointing enemy locations as well as flushing them out. Her
+                            utlities revolve around marking a target and causing distress by deafening any players hit with her
+                            utility. Fade's five abilities are: PROWLER, SEIZE, her signature ability HAUNT, her ultimate ability
+                            NIGHTFALL, and her passive ability Terror Trail. Her passive ability applies a terror trail that marks
+                            enemies, causing their position and movement to be tracked by dark mist. Prowler can be used to pursue
+                            trails. Fade's first ability prowler sends a "prowley" forward, hold the fire button to steer the
+                            prowler in the direction of your crosshair. The prowler will chase down the first enemy or terror trail
+                            that it sees, and nearsight the enemy on impact. Her ability seize throws a knot of raw fear. The knot
+                            drops down after a short period of time, however you can drop the seize early by reactivating the ability.
+                            The knot ruptures on impact, holding nearby enemies in place. Enemies that are held in place are Deafened
+                            and Decayed (loses a set amount of health that is later regenerated if no damage is taken while decayed).
+                            Her signature ability Haunt, throws a haunting watcher that drops down after a set amount of time, you
+                            can drop the haunt earlier by reactivating the ability. The haunting watcher lashes out on impact and
+                            reveals enemies in its line of sight and creating terror trails to each enemy revealed. Enemies can
+                            destroy the watcher. Fade's ultimate ability like the others needs to be charged via kills, deaths,
+                            and/or bomb plants/defuses. Nightfall equips the power of nightmare itself, and unleashes a wave of
+                            unstoppable nightmare energy. Enemies caught in the wave are marked by terror trails, deafened, and
+                            decayed.
+                        </p>
+
+                        <h4>TERROR TRAILS</h4>
+                        <img id="terrorTrailsImg" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Fade/terror-trails-img.jpeg" alt="image of Fade's passive ability TERROR TRAILS">
+
+                        <h4>PROWLER</h4>
+                        <img id="prowlerImg" src="https://www.esports.net/wp-content/uploads/2022/08/Valorant-Fade-Prowler-e1661783567234.jpg" alt="image of fade using her prowler ability">
+
+                        <h4>SEIZE</h4>
+                        <div id="seizeContainer">
+                            <img id="seizeVid" src="https://cdn.sanity.io/images/ccckgjf9/production/b94c7a62ed5ef26cf771507c79399851cf6a567e-640x480.gif?max-h=1080&amp;max-w=1920&amp;fit=scale&amp;auto=format" alt="">
+                        </div>
+
+                        <h4>HAUNT</h4>
+                        <img id="hauntVid" src="https://cdn.sanity.io/images/ccckgjf9/production/ccca88c21f7247cbac6ed29be48c7f4c98484959-640x480.gif?max-h=1080&amp;max-w=1920&amp;fit=scale&amp;auto=format" alt="">
+
+                        <h4>NIGHTFALL</h4>
+                        <img id="nightfallVid" src="https://cdn.sanity.io/images/ccckgjf9/production/0c136969cf3e0a6e9f24ebb66d04528caa68c34e-640x480.gif?max-h=1080&amp;max-w=1920&amp;fit=scale&amp;auto=format" alt="">
+                    </div>
+
+                    <div id="Gekko">
+                        <h3>Gekko</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Gekko/gekkoBanner1.webp" alt="Gekko Banner">
+
+                        <p>
+                            Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering
+                            enemies out of the way, with Gekko chasing them down to regroup and go again. Gekko's abilities are
+                            powerful when used individually, but when utilized together they provide a wealth of information and
+                            can be extremely challenging to counter. Gekko's five abilities are: MOSH PIT, WINGMAN, his signature
+                            ability DIZZY, his ultimate ability THRASH, and his passive ability GLOBULES. His first ability most
+                            pit throws a mosh like a grenade that upon landing spreads across a large area then after a short
+                            delay explodes. You can throw this ability underhand with the alternate-fire button. His second ability
+                            sends Wingman forward seeking enemies. Wingman unleashes a concussive blast towards the first enemy he
+                            sees, players that are concussed will have a blurred screen with reduced movement speed and slower
+                            fire-rate. Alternate-fire when targeting a spike site or planted spike will send Wingman forward to
+                            either defuse or plant the spike. To plant the spike Gekko must have the spike in his inventory. His
+                            signature ability sends Dizzy soaring forward through the air. Dizzy charges then unleashes plasma
+                            blasts at enemies in line of sight. Enemies that are hit with her plasma are blinded. Enemies that are
+                            blinded by Dizzy will have goo-like substance on their screen for a brief period. Gekko's ultimate
+                            ability ultimate ability like the others needs to be charged via kills, deaths, and/or bomb plants/defuses.
+                            Thrash links Gekko to Thrash's mind and steer her through enemy territory. Activate to lunge forward
+                            and explode, detaining any players in a small radius. Gekko's passive allows Wingman, Dizzy, and Thrash
+                            to revert into a dormant globule after they are used. Gekko then has a brief period where he can interact
+                            with the globules to reclaim them and gain another charge of the ability after a short duration. Thrash
+                            can only be reclaimed once.
+                        </p>
+
+                        <h4>Gekko Ability Showcase</h4>
+                        <iframe width="619" id="gekkoAbilitiesVid" src="https://www.youtube.com/embed/syH6UrE8Ang" title="New Valorant Agent Gekko: All Abilities Gameplay Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div id="KAY/O">
+                        <h3>KAY/O</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Kayo/kay:oBanner2.jpeg" alt="KAY/O Banner">
+
+                        <p>
+                            KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress
+                            enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the
+                            ultimate edge. His playstyle revolves around disruption and disabling enemy abilities. His
+                            abilities are designed to counter enemy utility and to gather information on enemy locations.
+                            KAY/O's four abilities are: FRAG/MENT, FLASH/DRIVE, his signature ability ZERO/POINT, his ultimate
+                            ability NULL/CMD. FRAG/MENT throws a fragment grenade that sticks to the floor and explodes multiple
+                            times, dealing near lethal damage at the center with each explosion. Alternate-fire to lob the grenade
+                            instead of throwing it. His second ability FLASH/DRIVE equips a flash grenande, FIRE to throw it
+                            overhand and alternate-fire to lob a weaker version that explodes quicker. The flash grenande explodes
+                            after a short fuse, blinding anyone in line of sight. His signature ability ZERO/POINT equips a
+                            suppression blade that sticks to the first surface it hits when thrown, winds up, and suppresses anyone
+                            in the radius of that explosion. His ultimate ability ultimate ability like the others needs to be
+                            charged via kills, deaths, and/or bomb plants/defuses. NULL/CMD instantly overload with polarized
+                            radianite energy that pulses from KAY/O in a massive radius. Enemies that are hit with the pulses are
+                            suppressed for a short duration. While overloaded, KAY/O gains combat stim and can be re-stabilized
+                            if downed. Players that are suppressed are unable to use abilities for a brief period.
+                        </p>
+
+                        <h4>FRAG/MENT</h4>
+                        <iframe id="fragmentVid" allowfullscreen="" scrolling="no" allow="encrypted-media;" title="dailymotion" data-src="https://www.dailymotion.com/embed/video/x89s852?pubtool=oembed" class="lazy-iframe" src="https://www.dailymotion.com/embed/video/x89s852?pubtool=oembed">
+                        </iframe>
+
+                        <h4>FLASH/DRIVE</h4>
+                        <iframe id="flashDriveVid" allowfullscreen="" scrolling="no" allow="encrypted-media;" title="dailymotion" data-src="https://www.dailymotion.com/embed/video/x89s8at?pubtool=oembed" class="lazy-iframe" src="https://www.dailymotion.com/embed/video/x89s8at?pubtool=oembed">
+                        </iframe>
+
+                        <h4>ZERO/POINT</h4>
+                        <iframe id="zeroPointVid" allowfullscreen="" scrolling="no" allow="encrypted-media;" title="dailymotion" data-src="https://www.dailymotion.com/embed/video/x89s81a?pubtool=oembed" class="lazy-iframe" src="https://www.dailymotion.com/embed/video/x89s81a?pubtool=oembed">
+                        </iframe>
+
+                        <h4>NULL/CMD</h4>
+                        <iframe id="nullcmdVid" src="https://www.youtube.com/embed/uFuNfLw9xCo" title="KAY/0 NULL/CMD (x ability) sound effects *Valorant" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                    <div id="Skye">
+                        <h3>Skye</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Skye/skyeBanner.jpeg" alt="Skye's Banner">
+
+                        <p>
+                            Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory.
+                            With her creations hampering the enemy, and her power to heal others, the team is strongest and
+                            safest by Skye's side. Skye's playstyle revolves around supporting her team with her abilities.
+                            She is capable of scouting out enemies and providing valuable intel and support to her team. Skye's
+                            four abilities are: REGROWTH, TRAILBLAZER, her signature ability GUIDING LIGHT, and her ultimate
+                            ability SEEKERS. Skye's first ability regrowth equips Skye with a healing trinket, the fire button
+                            channels the trinket and heals allies in range and line of sight. Regrowth can be reused until her
+                            healing pool is depleted. Skye cannot heal herself. Trailblazer equips a tasmanian tiger trinket,
+                            fire to send out and take control of the predator, while in control the fire button causes the tiger
+                            to leap forward, exploding in a concussive blast and damaging directly hit enemies. Her signature
+                            ability Guiding Light equips a flashing hawk trinket. The fire button sends the hawk forward, hold the
+                            fire button to guide the hawk in the direction of your crosshair. Re-activate the ability while the hawk
+                            is in flight to transform the hawk into a flash. The flash reaches max potency after a short duration
+                            during the hawk's flight. Skye's ultimate ability like all the others needs to be charged via kills,
+                            deaths, and/or bomb plants/defuses. Her ultimate ability seekers sends out three Seekers to track down
+                            the three closest enemies. If a seeker reaches its target, it Nearsights them. Enemies that are near
+                            sighted have a shorted range of view and can only see enemies that are within close proximities for a
+                            short duration.
+                        </p>
+
+                        <h4>REGROWTH</h4>
+                        <video controls="" id="regrowthVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0f5403509070a0a2/5f7fabc5879de80eb41b1f33/Val_Skye_C_Ability_Web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>TRAILBLAZER</h4>
+                        <video controls="" id="trailblazerVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt90a6f2733b96ce16/5f7faa7dd4fbb50ef307791e/Val_Skye_Q_Ability_Web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>GUIDING LIGHT</h4>
+                        <video controls="" id="guidingLightVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8ecea4a77a26c25b/5f7fab7adf178b0ea98495a5/Val_Skye_E_Ability_Web.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>SEEKERS</h4>
+                        <video controls="" id="seekersVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt966535853a54c58c/5f7fac19df178b0ea98495ad/Val_Skye_X_Ability_Web.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Sova">
+                        <h3>Sova</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/initiator/Sova/sovaBanner1.jpeg" alt="Sova Banner">
+
+                        <p>
+                            Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with
+                            ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that
+                            even if you run, you cannot hide. Sova's playstyle revolves around gathering information and
+                            providing support to his team. His abilities are focused on reconnaissance and disruption,
+                            allowing him to locate enemies and weaken their positions. Sova's four abilities are: OWL DRONE,
+                            SHOCK BOLT, his signature ability RECON BOLT, and his ultimate ability HUNTER'S FURY. Sova's Owl
+                            Drone ability deploys and takes control the movement of a drone to scout areas for enemies and
+                            can even fire a dart that will reveal enemies for a brief period of time if hit. Shock Bolt fires
+                            an arrow that upon contact with any surface will detonate an explosive shock that will damage
+                            enemies that are caught within it's range. You can add up to two bounces on this ability and
+                            holding the fire button will charge up the range of the projectile. Sova's signature ability
+                            Recon Bolt shoots a destructible arrow from his bow that can attach to any surface. Upon landing,
+                            it will reveal enemies caught in the line of sight of the arrow. Hold down the fire button to draw
+                            the bow further back and increase the power of the shot. Releasing the button fires the arrow.
+                            Additionally, you can add two bounces to this ability, similar to the Shock Bolt with the
+                            alternate-fire button. Sova's ultimate ability like the others needs to be charged via kills, deaths,
+                            and/or bomb plants/defuses before it can be used. Hunter's Fury equips Sova with a bow that can fire
+                            three long-range, wall-piercing energy blasts in a straight line in front of Sova. Hunter's Fury will
+                            damage and reveal all enemies that are caught in the line of fire for a short period of time. This
+                            ability can be fire three times total, and each energy blast deals massive damage to the enemies hit.
+                        </p>
+
+                        <h4>OWL DRONE</h4>
+                        <iframe src="https://giphy.com/embed/XcXx1e84smlO548ixJ" id="owlDroneVid" frameborder="0" class="giphy-embed" allowFullScreen>
+                        </iframe>
+
+                        <h4>SHOCK BOLT</h4>
+                        <iframe src="https://giphy.com/embed/L0NDmR9OmCOEQqvxjt" id="shockBoltVid" frameborder="0"  class="giphy-embed" allowFullScreen>
+                        </iframe>
+
+                        <h4>RECON BOLT</h4>
+                        <iframe src="https://giphy.com/embed/TdueV0APiSJCrjxbMj" id="reconBoltVid" frameborder="0"  class="giphy-embed" allowfullscreen>
+                        </iframe>
+
+                        <h4>HUNTER'S FURY</h4>
+                        <iframe src="https://giphy.com/embed/ZBzkZd4rOpbc6SgHte" id="huntersFuryVid" frameborder="0"  class="giphy-embed" allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Sentinels">
+                <h2>Sentinels</h2>
+                <p>
+                    A Sentinel is a defensive-oriented agent whose primary role is to protect the team's designated sites or
+                    areas. They do this by using their abilities to slow down or deny enemy movements, gather information,
+                    and provide cover for their teammates. Sentinels typically play a supportive role, staying back and holding
+                    down key positions on the map with traps, barriers, and alarms. They often act as the anchor of the team,
+                    providing the backbone of the defensive strategy and preventing the enemy from gaining too much ground.
+                </p>
+                <img id="roleBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/sentinel/sentinelsBanner1.avif" alt="sentinels banner">
+                <!-- sentinels banner? -->
+
+                <div id="SentinelAgents">
+                    <div id="Chamber">
+                        <h3>Chamber</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/sentinel/Chamber/chamberBanner.jpeg" alt="Chamber Banner">
+
+                        <p>
+                            Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision.
+                            He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency
+                            built for every plan. Chambers abilities as a sentinel differ from the rest. His kit allows him to
+                            play as a more aggressive type of sentinel. His four abilities are: TRADEMARK, HEAD HUNTER, his
+                            signature ability RENDEZVOUS, and his ultimate ability TOUR DE FORCE. Chamber is classified as a
+                            sentinel due to his ability Trademark. Trademark places a trap that scans for enemies on the floor.
+                            When a visible enemy comes in range, the trap counts down and destabilizes the terrain around them,
+                            creating a lingering field that slows players caught inside of it, while also notifying your team
+                            that someone has set your trap off. Trademark can be picked up to be redeployed during the round.
+                            Headhunter equips Chamber with a heavy pistol that can be scoped in with alternate-fire. His signature
+                            ability Rendezvous places down a teleporting anchor on the ground. While Chamber is on the ground and
+                            within the range of Rendezvous, reactivating the ability will quickly teleport Chamber to the anchors
+                            position. Rendezvous can be picked up to be redployed during the same round. Chamber players will
+                            generally take advantage of this ability by taking an aggressive peak, getting a kill, and then
+                            teleporting out. Chamber's ultimate ability like the rest of the agents needs to be charged via kill,
+                            deaths, and/or bomb plants/defuses before he can use it. Tour de Force equips Chamber with a custom
+                            sniper that will kill enemies with any direct hit to the upper body and up. killing enemies with Tour
+                            de Force will create a lingering field that slows players caught in the field.
+                        </p>
+
+                        <h4>TRADEMARK</h4>
+                        <video controls="" id="trademarkVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt318d4a246e29106a/618d9fdbf71a3113890e9632/VAL_broll_EP03-3_Chamber_C.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>HEADHUNTER</h4>
+                        <video controls="" id="headhunterVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc97eeaeb138d2155/618d9fb7867d1817d95f3b2b/VAL_broll_EP03-3_Chamber_Q.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>RENDEZVOUS</h4>
+                        <iframe id="rendezvousVid" src="https://www.youtube.com/embed/mdihhtpHccg" title="Chamber&#39;s Rendezvous Changes | VALORANT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                        <h4>TOUR DE FORCE</h4>
+                        <video controls="" id="tourDeForceVid">
+                            <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta111e90b3f2ce476/618d9fde3b08dd14d79a808f/VAL_broll_EP03-3_Chamber_X.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="Cypher">
+                        <h3>Cypher</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/sentinel/Cypher/cypherBanner2.jpeg" alt="Cypher Banner">
+
+                        <p>
+                            The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy’s
+                            every move. No secret is safe. No maneuver goes unseen. Cypher is always watching. Cypher's playstyle
+                            revolves around setting up traps and gathering intel on enemy movements. His abilities allow him to
+                            create a web of traps and cameras across the map, giving him and his team a significant advantage in
+                            terms of information. Cypher's four abilities are: TRAPWIRE, CYBER CAGE, his signature ability SPYCAM,
+                            and his ultimate ability NEURAL THEFT. Trapwire places a destructible covert tripwire at the targeted
+                            location, creating a line that spans between two surfaces (there's a limited range). Enemy players who
+                            cross the tripwire will be tethered (unable to move to a certain extent), revealed (highlighted through
+                            smokes, walls, and other obstacles), and concussed after a short brief period of time if they don't
+                            destroy the device in time. This ability can be picked up to be redeployed in the same round. Cyber Cage
+                            instantly tosses a device on the floor in front of him. This can be activated to create a zone that
+                            blocks off vision and plays an audio cue when enemies pass through it. The inside of this cage is hollow,
+                            therefore players inside the smoke can see each other. His signature ability Spy Cam places a covert
+                            camera at a targeted location, Cypher is limited to how far away he can place the cam from his current
+                            location. Re-use the ability to take control of the camera's view. While in control of the cam, fire to
+                            shoot a marking dart, this dart will reveal the location of any enemy hit by the dart until the dart is
+                            taken off. His ultimate ability like the others need to be charged via kills, deaths, and/or bomb
+                            plants/defuses before it can be used. Neural Theft can only be used on a targeted enemy corpse to
+                            download information on their team's position. After a brief delay, the location of all living enemy
+                            players will be revealed. The location will be revealed again after another short delay.
+                        </p>
+
+                        <h4>TRIPWIRE</h4>
+                        <video class="wp-video-shortcode" id="tripwireVid" preload="auto" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9b7d004dc573791c/5ecad7e85e73766852c8ed8c/Cypher_C_v001_web.mp4?_=1">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9b7d004dc573791c/5ecad7e85e73766852c8ed8c/Cypher_C_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9b7d004dc573791c/5ecad7e85e73766852c8ed8c/Cypher_C_v001_web.mp4</a>
+                        </video>
+
+                        <h4>CYBER CAGE</h4>
+                        <video class="wp-video-shortcode" id="cyberCageVid" preload="auto" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt019fa05d6b7fddef/5ecad7e597b46c1911ad186c/Cypher_Q_v001_web.mp4?_=2">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt019fa05d6b7fddef/5ecad7e597b46c1911ad186c/Cypher_Q_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt019fa05d6b7fddef/5ecad7e597b46c1911ad186c/Cypher_Q_v001_web.mp4</a>
+                        </video>
+
+                        <h4>SPYCAM</h4>
+                        <video class="wp-video-shortcode" id="spyCamVid" preload="auto" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47c03800823ce304/5ecad7e64a28e119db562296/Cypher_E_v001_web.mp4?_=3">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47c03800823ce304/5ecad7e64a28e119db562296/Cypher_E_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt47c03800823ce304/5ecad7e64a28e119db562296/Cypher_E_v001_web.mp4</a>
+                        </video>
+
+                        <h4>NEURAL THEFT</h4>
+                        <video class="wp-video-shortcode" id="neuralTheftVid" preload="auto" controls="controls">
+                            <source type="video/mp4" src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29f3571576a3937f/5ecad7e5e2a559592eb0c1b0/Cypher_X_v001_web.mp4?_=4">
+                            <a href="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29f3571576a3937f/5ecad7e5e2a559592eb0c1b0/Cypher_X_v001_web.mp4">https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt29f3571576a3937f/5ecad7e5e2a559592eb0c1b0/Cypher_X_v001_web.mp4</a>
+                        </video>
+                    </div>
+
+                    <div id="Killjoy">
+                        <h3>Killjoy</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/sentinel/Killjoy/killjoyBanner1.jpeg" alt="Killjoy Banner">
+
+                        <p>
+                            The genius of Germany, Killjoy secures the battlefield with ease using her arsenal of inventions. If
+                            the damage from her gear doesn't stop her enemies, her robots debuff will help make short work of
+                            them. Killjoy's playstyle is focused on setting up traps and holding positions. Her abilities allow
+                            her to secure areas and deny enemy entry. Killjoy's abilities are: NANOSWARM, ALARMBOT, her signature
+                            ability TURRET, her ultimate ability LOCKDOWN. Her first ability equips Killjoy with nanoswarm grenades
+                            that can be thrown, alternate-fire to lob them. Upon landing the nanoswarms go covert. Reactivate the
+                            ability to deploy a swarm of nanobots that deal damage to players that are caught inside the area of
+                            effect. Alarmbot places a covert robot that hunts down enemies that enter its range. After reaching the
+                            target it will detonate and apply vulnerability to enemies in the area. This robot can be picked up for
+                            redploy in the same round. Her signature ability turret places down a turret that will fire at enemies
+                            in a 180 degree cone
+                        </p>
+
+                        <h4>NANOSWARM</h4>
+                        <iframe id="nanoswarmVid" src="https://www.youtube.com/embed/hyUoXieq0VI" title="Killjoy - Nanoswarm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                        <h4>ALARMBOT</h4>
+                        <iframe id="alarmbotVid" src="https://www.youtube.com/embed/o7kTq7tMLVs" title="Killjoy - AlarmBot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                        <h4>TURRET</h4>
+                        <iframe id="turretVid" src="https://www.youtube.com/embed/GdPKIePf-Go" title="Killjoy - Turret" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                        <h4>LOCKDOWN</h4>
+                        <iframe id="lockdownVid" src="https://www.youtube.com/embed/4Dj2LqGHFxU" title="Killjoy - Lockdown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div id="Sage">
+                        <h3>Sage</h3>
+                        <img id="agentBanner" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/agents/sentinel/Sage/sageBanner2.webp" alt="Sage Banner">
+
+                        <p>
+                            The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to
+                            revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish
+                            fight. Sage is a supportive agents that can be tricky to play against. She excels at healing
+                            and crowd control. Her playstyle revolves around providing healing and protection to her team
+                            while slowing down and hindering the enemy team's movements. Her four abilities are: BARRIER
+                            ORB, SLOW ORB, her signature ability HEALING ORB, and her ultimate RESURRECTION. Barrier orb
+                            places a wall that fortifies after a few seconds. Alternate-fire to rotate the orientation of
+                            the wall.
+                        </p>
+
+                        <h4>BARRIER ORB</h4>
+                        <iframe src="https://giphy.com/embed/UQ77gAHDJZwbp2dVhf" id="barrierOrbVid" frameBorder="0" class="giphy-embed" allowFullScreen>
+                        </iframe>
+
+                        <h4>SLOW ORB</h4>
+                        <iframe src="https://giphy.com/embed/YqWqiF5vjDX4Bshogj" id="slowOrbVid" frameBorder="0" class="giphy-embed" allowFullScreen>
+                        </iframe>
+
+                        <h4>HEALING ORB</h4>
+                        <iframe src="https://giphy.com/embed/hV0BmjeqPz8nxGdG1r" id="healingOrbVid" frameBorder="0" class="giphy-embed" allowFullScreen>
+                        </iframe>
+
+                        <h4>RESURRECTION</h4>
+                        <iframe src="https://giphy.com/embed/S52xU1voLEkdnmsDGN" id="resurrectionVid" frameBorder="0" class="giphy-embed" allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <div id="footer">
+        <!-- list the link to the info -->
+        <h3>Links to the Information</h3>
+        <ul id="linksToInfo">
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Astra">Astra's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Brimstone">Brimston's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Harbor">Harbor's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Omen">Omen's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Viper">Viper's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Jett">Jett's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Neon">Neon's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Phoenix">Phoenix's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Raze">Raze's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Reyna">Reyna's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Yoru">Yoru's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Breach">Breach's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Fade">Fade's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Gekko">Gekko's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/KAYO">KAY/O's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Skye">Skye's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Sova">Sova's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Chamber">Chamber's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Cypher">Cypher's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Killjoy">Killjoy's Information</a></li>
+            <li>Link to <a href="https://valorant.fandom.com/wiki/Sage">Sage's Information</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

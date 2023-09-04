@@ -1,0 +1,71 @@
+/* top of the page */
+#mapsBanner{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Whole Page */
+body{
+
+}
+
+/* Header? */
+#mapsBanner{
+    max-height: 540px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    margin-bottom: -10px;
+}
+
+/* Css to split the body container */
+#splitPage{
+    display: grid;
+    grid-template-columns: 1fr 6fr 0.5fr;
+    background-color: var(--backgroundColor);
+
+}
+
+/* Sidebar */
+#sidebar{
+    padding-left: 15px;
+    margin: 20px 10px 10px 10px;
+    background-color: var(--containerColor);
+    color: var(--fontColor);
+}
+
+#sidebar>ul>li>a{
+    color: var(--fontColor);
+}
+
+/* Main Content */
+#mainContent{
+    background-color: var(--containerColor);
+    color: var(--fontColor);
+    padding: 0 15px 15px 15px;
+    margin: 20px 10px 10px 10px;
+}
+
+p{
+    width:95%;
+    padding:10px;
+    text-align:justify;
+}
+
+#mapImage{
+    width: 95%;
+}
+
+/* footer */
+footer{
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+}
+footer>p>a{
+    color: beige;
+}
+
+footer>p{
+    text-align: center;
+}

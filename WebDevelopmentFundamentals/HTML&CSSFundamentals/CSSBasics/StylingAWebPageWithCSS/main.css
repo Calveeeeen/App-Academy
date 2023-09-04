@@ -1,0 +1,35 @@
+h1 {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: auto;
+    font-weight: bolder;
+    color: cornflowerblue;
+    background-color: white;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    margin: 10px;
+    font-weight: bolder;
+    color: red;
+    background-color: beige;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: tan;
+}
+
+.logo {
+    background-size: cover;
+    background-image: url( https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}

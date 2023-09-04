@@ -1,0 +1,45 @@
+/* CSS for Home */
+/* CSS for Body */
+body{
+    margin: 0;
+
+}
+
+/* main Content */
+#mainContent{
+    display: grid;
+    position: relative;
+    z-index: 1;
+    color: #ff4655;
+    padding: 60px 100px 25px 100px;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#mainBody{
+    margin: auto;
+    width: 100%;
+    background-color: #1e2d47;
+    padding: 10px;
+}
+
+#valorantBanner{
+    width: 100%;
+}
+
+#intro, #agentsIntro, #mapsIntro, #gamemodesIntro {
+    /* width: 80%; */
+    text-align: justify;
+    padding: 10px;
+}
+
+#agentsIntro>img, #mapsIntro>img, #gamemodesIntro>img{
+    width:100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin-top: -30px;
+    margin-bottom: -40px;;
+}
+
+p{
+    padding: 20px;
+}

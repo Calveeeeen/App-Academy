@@ -1,0 +1,25 @@
+:root{
+    --containerColor: #1e2d47;
+    --backgroundColor: #28282B;
+    --fontColor: #ff4655;
+}
+
+/* CSS for Body */
+body{
+    margin: 0;
+    position: absolute;
+    top:4%;
+}
+
+/* first pattern */
+.bgPattern{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    background-color: #28282B; /* Set the background color */
+    /* background-image: linear-gradient(to top left, #ff4655 50%, transparent 50%); Create a diagonal gradient */
+}
+
+html{
+    background-color: darkgray;
+}

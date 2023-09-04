@@ -1,0 +1,124 @@
+/* Header CSS */
+header{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+#appAcademy{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    /* text-align: center; */
+}
+
+#signInButton{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+/* Navbar CSS */
+nav{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+nav > ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+nav > ul > li{
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS for Body */
+/* CSS for the Heading */
+h1{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+    font-size: 45px;
+}
+
+/* CSS for the sub-heading */
+#subheading{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 2fr;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+}
+
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#subheading > button{
+    height: 50px;
+    border: 2px solid black;
+}
+
+/* CSS for the img */
+img{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    height: 250px;
+}
+
+/* first Text */
+#mainText{
+    display: block;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+#bodyText{
+    margin-left: 10px;
+}
+
+/* second Text */
+#text2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#subtitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#text2 > div > ul > li{
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS for Footer */
+footer{
+    display: grid;
+    grid-template-columns: 2fr repeat(6, 1fr);
+    width: 80%;
+    margin: auto;
+}

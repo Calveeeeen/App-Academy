@@ -1,0 +1,94 @@
+form{
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    width: 50%
+}
+
+div{
+    margin: 10px;
+}
+label {
+    display: block;
+    text-align: center;
+}
+
+input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+#status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 80px;
+}
+
+#date{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding:auto;
+    width: 60px;
+}
+legend{
+    border: 1px solid black;
+}
+
+#firstName, #lastName, #email{
+    text-align: center;
+}
+
+#grid1{
+    display: grid;
+    grid-template-columns: 70px 70px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+#progLangPrompt{
+    text-align: center;
+}
+.progLang {
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    justify-content: center;
+}
+
+.critic > label {
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.checkboxes{
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter{
+    display: inline-block;
+}
+
+#termsAndConditions{
+    display: inline-block
+}
+
+#submitButton{
+    display: flex;
+    justify-content: center;
+}

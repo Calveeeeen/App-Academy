@@ -1,0 +1,49 @@
+/* CSS to make grid */
+#gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--backgroundColor);
+}
+
+/* CSS for the containers */
+#gameModeContainer{
+    margin: 10px;
+    background-color: var(--containerColor);
+    padding: 10px;
+    color: var(--fontColor);
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#gameModeImage{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+#gameModeBanner{
+    max-height: 540px;
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+body{
+    background-color: var(--backgroundColor);
+}
+
+/* footer */
+footer{
+    background-color: var(--containerColor);
+    color: var(--fontColor);
+    padding: 20px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+}
+
+footer>p>a{
+    color: beige;
+
+}

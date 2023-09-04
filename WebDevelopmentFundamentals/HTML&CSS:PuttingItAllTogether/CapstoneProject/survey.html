@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles-survey.css">
+        <link rel="stylesheet" href="styles-universal.css">
+        <link rel="stylesheet" href="navbar.css">
+        <title>Contact Me</title>
+    </head>
+    <header>
+        <nav>
+            <ul id="navbarList">
+                <a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/homepage.html">
+                    <img id="valLogo" src="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/images/valorant-logo-2.png" alt="valorant logo"></a>
+                <div></div>
+                <li><a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/homepage.html">Home</a></li>
+                <li><a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/Agents.html">Agents</a></li>
+                <li><a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/Maps.html">Maps</a></li>
+                <li><a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/gameModes.html">Game Modes</a></li>
+                <li><a href="/Users/Calvin/Desktop/Projects/AppAcademy/Introduction to HTML and CSS/Capstone1/survey.html">Help Us Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Help Us Out</legend>
+
+                <div id="prompt">
+                    <p>
+                        Please help us out by taking this short survey. This survey helps us figure out our
+                        demographic/audience. If you have any concerns regarding any buggy functionality please
+                        let us know in the comments area. Also we would love to hear any criticisms you have
+                        on the website. We appreciate your honesty!
+                    </p>
+                </div>
+
+                <div id="firstNameContainer">
+                    <label for="firstName" required>First Name</label>
+                    <input type="text" id="firstName" name="first_name" placeholder="John">
+                </div>
+
+                <div id="lastNameContainer">
+                    <label for="lastName" required>Last Name</label>
+                    <input type="text" id="lastName" name="last_name" placeholder="Doe">
+                </div>
+
+                <div id="emailContainer">
+                    <label for="emailAddress" required>Email Address</label>
+                    <input type="email" id="emailAddress" name="email_address" placeholder="JohnDoe@gmail.com">
+                </div>
+
+                <div id="valPlayer">
+                    <h3>Do you play Valorant?</h3>
+                    <input type="radio" value="Yes" id="valorantPlayer" name="yesorno">
+                    <label for="valorantPlayer">Yes</label>
+                    <input type="radio" value="No" id="valorantPlayer" name="yesorno">
+                    <label for="valorantPlayer">No</label>
+                </div>
+
+                <div id="expLvlContainer">
+                    <h3 for="expLvl">What is your experience level?</h3>
+                    <input type="radio" value="beginner" id="beginner" name="exp_lvl" value="Beginner">
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" value="casual" id="casual" name="exp_lvl" value="Casual">
+                    <label for="casual">Casual</label>
+                    <input type="radio" value="competitive" id="competitive" name="exp_lvl" value="Competitive">
+                    <label for="competitive">Competitive</label>
+                    <input type="radio" value="pro" id="professional" name="exp_lvl" value="Professional">
+                    <label for="professional">Professional</label>
+                </div>
+
+                <div id="favRolesContainer">
+                    <h3 for="favRoles">What is your favorite role(s)?</h3>
+                    <input type="checkbox" id="favRoles" name="fav_roles" value="Duelist">Duelist
+                    <input type="checkbox" id="favRoles" name="fav_roles" value="Initiator">Initiator
+                    <input type="checkbox" id="favRoles" name="fav_roles" value="Sentinel">Sentinel
+                    <input type="checkbox" id="favRoles" name="fav_roles" value="Controller">Controller
+                    <input type="checkbox" id="favRoles" name="fav_roles" value="DoesNotApply">Does Not Apply
+                </div>
+
+                <div id="FPSgames">
+                    <h3>What other FPS games have you played?</h3>
+
+                    <div id="checkboxOptions">
+                        <input type="checkbox" id="FPSgame1" name="FPS_game" value="CallOfDuty">
+                        <label for="FPSgame1">Call of Duty</label>
+                        <input type="checkbox" id="FPSgame2" name="FPS_game" value="BattleField">
+                        <label for="FPSgame2">Battle Field</label>
+                        <input type="checkbox" id="FPSgame3" name="FPS_game" value="CSGO">
+                        <label for="FPSgame3">Counter Strike: Global Offensive</label>
+                        <input type="checkbox" id="FPSgame4" name="FPS_game" value="CombatArms">
+                        <label for="FPSgame4">Combat Arms</label>
+                        <input type="checkbox" id="FPSgame5" name="FPS_game" value="Fortnite">
+                        <label for="FPSgame5">Fortnite</label>
+                        <input type="checkbox" id="FPSgame6" name="FPS_game" value="Apex">
+                        <label for="FPSgame6">Apex</label>
+                    </div>
+                </div>
+
+                <div id="commentsSection">
+                    <label for="Comments">Comments and/or Concerns</label>
+                    <textarea id="commentsConcerns" name="comments_concerns" placeholder="Enter your comments and/or concerns here..."></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

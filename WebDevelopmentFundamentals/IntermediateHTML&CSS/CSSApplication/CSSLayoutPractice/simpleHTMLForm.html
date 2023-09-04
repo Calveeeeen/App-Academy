@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple HTML Form</title>
+        <link rel="stylesheet" href="layout.css">
+    </head>
+
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name" placeholder="John">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name" placeholder="Doe">
+                </div>
+
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email_address" placeholder="JohnDoe@yahoo.com">
+                </div>
+
+                <div id="grid1">
+                    <div class="status">
+                        <label for="status">Status</label>
+                        <select name="user_title" id="status">
+                            <option>Pick a role</option>
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+
+                    <div class="date">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="todaysDate">
+                    </div>
+                </div>
+                <div >
+                    <p id="progLangPrompt">Choose your favorite programming language</p>
+                    <div class="progLang">
+                        <input type="radio" value="favLang" name="favLang">HTML</input>
+                        <input type="radio" value="favLang" name="favLang">CSS</input>
+                        <input type="radio" value="favLang" name="favLang">JavaScript</input>
+                    </div>
+                </div>
+
+                <div class="critic">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comment_area"></textarea>
+                </div>
+
+                <div class="checkboxes">
+                    <div>
+                        <input type="checkbox" id="newsletter" name="news_letter">Sign up for the Newsletter </input>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="termsAndConditions" name="terms_and_conditions">Agree to terms and conditions</input>
+                    </div>
+                </div>
+
+                <div id="submitButton">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

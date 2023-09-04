@@ -1,0 +1,128 @@
+/* CSS for the Agents Page */
+
+
+/* Css to split the body container */
+#splitPage{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    column-gap: 20px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* CSS for Body */
+body{
+    padding-top: -70px;
+    background-color: var(--backgroundColor);
+}
+
+#agentsBanner{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    padding-top: -20px;
+    max-height: 550px;
+}
+
+/* sidebar */
+#sidebar{
+    background-color:var(--containerColor);
+    padding: 15px;
+    color: #ff4655;
+    overflow-y: auto;
+    max-height: 100%;
+    margin-left: 10px;
+}
+
+#sidebarSticky{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#sidebarSticky>ul>li>a, #sidebarSticky>ul>li>ul>li>a{
+    color: #ff4655;
+}
+
+
+/* main Content */
+#MainContents{
+    max-width: 95%;
+    background-color: var(--containerColor);
+    position: relative;
+    z-index: 1;
+    color: #ff4655;
+    padding: 15px;
+    justify-content: center;
+}
+
+/* limiting banner sizes */
+#roleBanner, #agentBanner{
+    max-width: 100%;
+}
+
+#roleBanner{
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+#agentBanner{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+/* limited video sizes */
+video, iframe, #driftVid, #energyImg, #curveBallGif,
+#soulHarvestImg, #leerImg, #terrorTrailsImg, #prowlerImg,
+#seizeContainer, #hauntVid, #nightfallVid, #novaPulseVid,
+#nebulaAndDissipateVid, #cosmicDivideImg, #heatingUpImg,
+#runItBackGif{
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+
+#gekkoAbilitiesVid, #fragmentVid, #flashDriveVid,
+#zeroPointVid, #nullcmdVid, #owlDroneVid, #shockBoltVid,
+#reconBoltVid, #huntersFuryVid, #rendezvousVid,
+#nanoswarmVid, #alarmbotVid, #turretVid, #lockdownVid,
+#barrierOrbVid, #slowOrbVid, #healingOrbVid, #resurrectionVid{
+    height: 350px;
+}
+
+/* styling the texts */
+h4{
+    text-align: center;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* bottom of page */
+#footer{
+    background-color:var(--containerColor);
+    padding: 5px 0 5px 5px;
+    margin: 10px 0 10px 10px;
+    width: 96.5%;
+}
+
+#footer>h3{
+    color:var(--fontColor);
+}
+
+#linksToInfo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 20px;
+    margin-top: -10px;
+    color: #ff4655;
+}
+
+#linksToInfo>li>a{
+    text-decoration: none;
+    color:white;
+}
