@@ -1,0 +1,45 @@
+/***********************************************************************
+Write a recursive function called `fibonacci` that takes an integer, `n`,
+and returns the `n`th number in the Fibonacci sequence.
+
+Not familiar with the Fibonacci sequence? Beginning with 0 and 1, we add the two
+previous numbers in the sequence together to form the next one:
+
+0, 1, 1, 2, 3, 5, 8, etc....
+
+We count Fibonacci numbers beginning with the first 1. Take a look at the
+examples below if you're unsure where to start!
+
+Examples:
+
+fibonacci(1); // 1
+fibonacci(2); // 1
+fibonacci(3); // 2
+fibonacci(4); // 3
+fibonacci(10); // 55
+***********************************************************************/
+
+// your code here
+function fibonacci(int){
+  let arr = [0,1]
+
+  for(let i = 0; i<=int-1; i++){
+    let el1= arr[i];
+    let el2 = arr[i+1];
+    let sum = el1+el2;
+    return arr.push(sum);
+  }
+  console.log(arr);
+  if(int == 1 || int == 2){
+    return 1
+  }
+  else{
+    return arr[int-2];
+  }
+}
+/**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
+try {
+  module.exports = fibonacci;
+} catch (e) {
+  module.exports = null;
+}
