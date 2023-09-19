@@ -21,20 +21,14 @@ fibonacci(10); // 55
 
 // your code here
 function fibonacci(int){
-  let arr = [0,1]
-
-  for(let i = 0; i<=int-1; i++){
-    let el1= arr[i];
-    let el2 = arr[i+1];
-    let sum = el1+el2;
-    return arr.push(sum);
+  if(int <= 0){
+    return 0;
   }
-  console.log(arr);
-  if(int == 1 || int == 2){
+  else if(int == 1){
     return 1
   }
   else{
-    return arr[int-2];
+    return fibonacci(int-1) + fibonacci(int-2);
   }
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

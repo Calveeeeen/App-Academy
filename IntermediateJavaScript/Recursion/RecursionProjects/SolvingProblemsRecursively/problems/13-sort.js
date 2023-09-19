@@ -23,6 +23,23 @@ sort([]); // []
 
 function sort(nums, sorted = []) {
   // your code here
+  let el1 = nums[0];
+  let el2 = nums[1];
+  if(nums.length == 0){
+    return sorted;
+  }
+  else if(nums.length > 0){
+    if(el1 < el2){
+      return sort(nums.slice(1));
+    }
+    else if(el1 == el2){
+      return sorted.push(el1), sort(nums.slice(1));
+    }
+    else if (nums.length == 0){
+      return sorted;
+    }
+  }
+  console.log(sorted);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

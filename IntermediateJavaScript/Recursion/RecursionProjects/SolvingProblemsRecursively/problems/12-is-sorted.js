@@ -11,7 +11,21 @@ isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
 
 // your code here
+function isSorted(arr, i=0){
+  if(arr.length > 0){
+    let el1 = arr[i];
+    let el2 = arr[i+1];
 
+    if(el1 > el2){
+      return false;
+    }
+    else if(el1 < el2){
+      return isSorted(arr, i+1);
+    }
+    return true;
+  }
+
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = isSorted;

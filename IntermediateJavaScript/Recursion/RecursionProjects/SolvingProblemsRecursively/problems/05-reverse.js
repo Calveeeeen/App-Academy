@@ -30,6 +30,21 @@ reverse(""); // ""
 //     return newStr.join("");
 //   }
 // }
+
+function reverse(str, revArr=[]){
+  if(str.length == 0){
+    return ""
+  }
+  else{
+    let letter = str[0];
+    revArr.unshift(letter);
+    return reverse(str.slice(1), revArr= [letter]);
+  }
+  console.log(revArr);
+
+}
+
+// console.log(reverse("house"));
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;
