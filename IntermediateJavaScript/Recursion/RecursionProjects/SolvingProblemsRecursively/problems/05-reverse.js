@@ -33,18 +33,20 @@ reverse(""); // ""
 
 function reverse(str, revArr=[]){
   if(str.length == 0){
-    return ""
+    return revArr.join("");
+
   }
   else{
     let letter = str[0];
     revArr.unshift(letter);
-    return reverse(str.slice(1), revArr= [letter]);
+
+    return reverse(str.slice(1), revArr);
   }
-  console.log(revArr);
+
 
 }
 
-// console.log(reverse("house"));
+console.log(reverse("house"));
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;
