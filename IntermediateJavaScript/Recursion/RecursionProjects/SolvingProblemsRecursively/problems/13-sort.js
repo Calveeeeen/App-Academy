@@ -23,25 +23,32 @@ sort([]); // []
 
 function sort(nums, sorted = []) {
   // your code here
-  let el1 = nums[0];
-  let el2 = nums[1];
+  //if nums.length == 0 return sorted;
   if(nums.length == 0){
     return sorted;
   }
-  else if(nums.length > 0){
-    if(el1 < el2){
-      return sort(nums.slice(1));
-    }
-    else if(el1 == el2){
-      return sorted.push(el1), sort(nums.slice(1));
-    }
-    else if (nums.length == 0){
-      return sorted;
+  // else { scroll through nums array to find the smallest number and then push it into sorted arr.
+  // return sort with sliced numsArr}
+  else if(nums.length>0){
+    for(let i=1;i<nums.length; i++){
+      for(let t=2; t<nums.length; t++){
+        let el1 = nums[i];
+        let el2 = nums[t];
+        let smallest = nums[0];
+        if(el1 < smallest){
+          smallest = el1;
+
+          if(el2 < el1){
+            smallest = el2;
+          }
+          else if(el1 < el2){
+            sorted.push(smallest);
+          }
+        }
+      }
     }
   }
-  console.log(sorted);
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sort;
