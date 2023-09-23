@@ -21,30 +21,23 @@ sort([0, 1, -3]); // [-3, 0, 1]
 sort([]); // []
 ***********************************************************************/
 
-function sort(nums, sorted = []) {
-  // your code here
-  //if nums.length == 0 return sorted;
-  if(nums.length == 0){
+function sort(nums){
+  let sorted = [];
+  if(nums.length === 0){
     return sorted;
   }
-  // else { scroll through nums array to find the smallest number and then push it into sorted arr.
-  // return sort with sliced numsArr}
-  else if(nums.length>0){
-    for(let i=1;i<nums.length; i++){
-      for(let t=2; t<nums.length; t++){
-        let el1 = nums[i];
-        let el2 = nums[t];
-        let smallest = nums[0];
-        if(el1 < smallest){
-          smallest = el1;
+  else{
+    let smallest = nums[0];
+    for (let i=1; i<nums.length; i++){
+      let el = nums[i];
 
-          if(el2 < el1){
-            smallest = el2;
-          }
-          else if(el1 < el2){
-            sorted.push(smallest);
-          }
-        }
+      if(el < smallest){
+        smallest = el;
+      }
+
+      sorted.push(smallest);
+      if(nums[i]== smallest){
+        return sort(nums.slice(i-1,i));
       }
     }
   }
