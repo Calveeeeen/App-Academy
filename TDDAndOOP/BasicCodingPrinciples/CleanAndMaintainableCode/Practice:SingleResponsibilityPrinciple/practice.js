@@ -1,4 +1,4 @@
-/******************************** CONSTANTS *********************************/ 
+/******************************** CONSTANTS *********************************/
 const applePieRecipe = [
   { name: "pie crust", cost: 10.00, quantity: 1 },
   { name: "sugar", cost: 3.00, quantity: 0.5 },
@@ -33,10 +33,19 @@ const recipes = {
 /* DO NOT CHANGE THE CODE ABOVE */
 
 /*************************** FUNCTION TO REFACTOR ****************************/
+
 function bakeAndSellPies(pieType, pieQuantity, profitMargin) {
   // Find the recipe for the pieType specified
   const recipe = recipes[pieType];
   // Bake the number of pies specified by the pieQuantity
+  bakeNumPies(pieType, recipe, pieQuantity);
+
+
+  calcProfit(recipe, pieQuantity, profitMargin)
+
+}
+
+function bakeNumPies(pieType, recipe, pieQuantity){
   for (let i = 0; i < pieQuantity; i++) {
     // Print the ingredients for each ingredient in the recipe
     let combiningMsg = `Combining ingredients for ${pieType}: `
@@ -46,7 +55,9 @@ function bakeAndSellPies(pieType, pieQuantity, profitMargin) {
     // Print the nth pie that was baked
     console.log(`Baked pie ${i + 1}!`);
   }
+}
 
+function calcProfit(recipe, pieQuantity, profitMargin){
   // Print the cost of each pie based on the cost of each ingredient
   const costOfPie = recipe.reduce((prev, current) => {
     return prev + current.cost;
