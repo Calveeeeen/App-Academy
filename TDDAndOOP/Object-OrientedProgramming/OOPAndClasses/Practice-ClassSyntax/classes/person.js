@@ -18,7 +18,7 @@ class Person {
         if(!(Array.isArray(arr))){
             console.log(`introducePeople only takes an array as an argument.`);
         }
-        else if(!( instanceof Person)){
+        else if(!(people instanceof Person)){
             console.log(`All items in array must be Person class instances`)
         }
         else{
