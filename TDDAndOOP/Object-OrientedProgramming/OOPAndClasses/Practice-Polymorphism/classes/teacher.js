@@ -14,6 +14,11 @@ class Teacher extends Person {
     }
     return count;
   }
+
+  introduce(){
+    let name = `${this.firstName} ${this.lastName}`;
+    return `Hello. I am ${name}, and I have been teaching ${this.subject} for ${this.yearsOfExperience} years.`;
+  }
 }
 
 /****************************************************************************/

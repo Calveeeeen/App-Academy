@@ -16,6 +16,12 @@ class Student extends Person {
       return "Both students have the same GPA";
     }
   }
+
+  introduce(){
+    // console.log(student.firstName);
+    let name = `${this.firstName} ${this.lastName}`;
+    return `Hello. I am ${name}, and I study ${this.major}.`
+  }
 }
 
 /****************************************************************************/
