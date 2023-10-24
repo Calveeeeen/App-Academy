@@ -13,17 +13,20 @@ class Person {
 
 
 
-    static introducePeople(arr){
+    static introducePeople(people){
         // console.log(Array.isArray(...Person));
-        if(!(Array.isArray(arr))){
-            console.log(`introducePeople only takes an array as an argument.`);
+        if(!(Array.isArray(people))){
+            throw new Error(`introducePeople only takes an array as an argument.`);
         }
-        else if(!(people instanceof Person)){
-            console.log(`All items in array must be Person class instances`)
+        for(let person of people){
+            if(!(person instanceof Person)){
+                throw new Error(`All items in array must be Person class instances.`)
+            }
         }
-        else{
-            return people.map((person) => person.introduce());
-        }
+
+       people.forEach(function(person){
+        person.introduce();
+       });
 
     }
 
