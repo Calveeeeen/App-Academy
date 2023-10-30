@@ -1,5 +1,5 @@
 // Your code here
-const Dragon = require("./classes/dragon")
+const Dragon = require("./classes/dragon");
 const FriendlyDragon = require("./classes/friendly-dragon");
 const EvilDragon = require("./classes/evil-dragon");
 
