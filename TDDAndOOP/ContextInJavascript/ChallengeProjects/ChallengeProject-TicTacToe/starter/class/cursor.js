@@ -24,6 +24,9 @@ class Cursor {
 
   up() {
     // Move cursor up
+    if (this.row > 0){
+      this.row--;
+    }
   }
 
   down() {
