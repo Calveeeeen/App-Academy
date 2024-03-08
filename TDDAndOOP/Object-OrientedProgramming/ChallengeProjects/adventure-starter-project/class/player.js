@@ -56,10 +56,10 @@ class Player {
        const itemIndex = this.items.findIndex(item => item.name === itemName && item instanceof Food);
        if(itemIndex != -1){
         const item = this.items.splice(itemIndex, 1)[0];
-        console.log(`You have eaten ${itemName}.`);
+        console.log(`You have eaten a ${itemName}.`);
        }
        else{
-        console.log(`You cannot eat ${itemName}`);
+        console.log(`You cannot eat a ${itemName}`);
        }
     }
 
