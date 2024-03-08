@@ -21,26 +21,31 @@ sort([0, 1, -3]); // [-3, 0, 1]
 sort([]); // []
 ***********************************************************************/
 
-function sort(nums){
-  let sorted = [];
-  if(nums.length === 0){
+function sort(nums, sorted=[]){
+  let smallest = nums[0];
+  let pos;
+  if (nums.length === 0){
     return sorted;
   }
   else{
-    let smallest = nums[0];
-    for (let i=1; i<nums.length; i++){
+    // find the smallest int in the array
+    for(let i=0; i< nums.length; i++){
       let el = nums[i];
-
       if(el < smallest){
         smallest = el;
+        pos = i;
       }
-
-      sorted.push(smallest);
-      if(nums[i]== smallest){
-        return sort(nums.slice(i-1,i));
+      else if(el === smallest){
+        continue;
+      }
+      else if(el > smallest){
+        continue;
       }
     }
+    sorted.push(smallest);
   }
+  nums.splice(pos,1);
+  return sort(nums, sorted);
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

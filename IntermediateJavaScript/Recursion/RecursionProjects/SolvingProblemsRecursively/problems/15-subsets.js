@@ -16,8 +16,15 @@ Hint: For subsets([1, 2, 3]), there are two kinds of subsets:
 
 // your code here
 function subsets(arr){
-  if (arr.length == 0 ){
-    return arr;
+  if (arr.length === 0 ){
+    // console.log(arr);
+    return [[]];
+  }
+  else{
+    let first = arr[0];
+    let rest = subsets(arr.slice(1));
+    let subsetWithFirst = rest.map(subset => [first, ...subset]);
+    return [...subsetWithFirst, ...rest];
   }
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

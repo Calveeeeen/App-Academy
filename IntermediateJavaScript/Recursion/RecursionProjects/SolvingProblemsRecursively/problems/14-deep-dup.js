@@ -37,9 +37,18 @@ console.log(x[0] === y[0]) // true
 ***********************************************************************/
 
 // your code here
-function deepDup(arr){
-  
+function deepDup(arr) {
+  let dup = [];
+  for (let el of arr) {
+    if (Array.isArray(el)) {
+      dup.push(deepDup(el)); // Recursively copy nested arrays
+    } else {
+      dup.push(el); // Copy non-array elements
+    }
+  }
+  return dup;
 }
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = deepDup;
