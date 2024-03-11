@@ -4,6 +4,8 @@ const {Character} = require('./character');
 class Enemy extends Character {
   constructor(name, description, currentRoom) {
     // Fill this in
+    super(name, description, currentRoom)
+    this.cooldown = 3000;
   }
 
   setPlayer(player) {
@@ -37,10 +39,15 @@ class Enemy extends Character {
 
   attack() {
     // Fill this in
+    this.player.applyDamage(this.strength);
   }
 
   applyDamage(amount) {
     // Fill this in
+    this.health = this.health - amount;
+    if(this.health <= 0){
+      this.die();
+    }
   }
 
 
@@ -54,8 +61,10 @@ class Enemy extends Character {
       this.scratchNose();
       this.rest();
     }
-
     // Fill this in
+    if(attack(this.enemy)){
+      this.enemy.attack(player);
+    }
   }
 
 

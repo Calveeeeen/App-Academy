@@ -4,8 +4,10 @@ const {Food} = require('./food');
 
 class Player extends Character {
 
-  constructor(name, startingRoom) {
-    super(name, "main character", startingRoom);
+  constructor(name, description, startingRoom) {
+    super(name, description="main character");
+    this.currentRoom = startingRoom;
+    this.items=[];
   }
 
   move(direction) {
@@ -34,31 +36,49 @@ class Player extends Character {
   }
 
   takeItem(itemName) {
-
     // Fill this in
-
+    const itemIndex = this.currentRoom.items.findIndex(item => item.name === itemName);
+    if (itemIndex !== -1) {
+      const item = this.currentRoom.items.splice(itemIndex, 1)[0];
+      this.items.push(...item);
+      return item;
+    }
+    return null
   }
 
   dropItem(itemName) {
-
     // Fill this in
+    const itemIndex = this.items.findIndex(item => item.name === itemName);
+    if(itemIndex !== -1){
+      const item = this.items.splice(itemIndex, 1)[0];
+      return this.currentRoom.push(item);
+    }
 
   }
 
   eatItem(itemName) {
-
     // Fill this in
-
+    const itemIndex = this.items.findIndex(item => item.name === itemName && item instanceof Food);
+    if (itemIndex !== -1){
+      const item = this.items.splice(itemIndex, 1)[0];
+      console.log(`You have eaten a ${itemName}`);
+    }
+    else{
+      console.log(`You cannot eat a ${itemName}`);
+    }
   }
 
   getItemByName(name) {
-
     // Fill this in
-
+    for(let i= 0; i<this.items.length; i++){
+      if(this.items[i].name === name){
+        return this.items[i];
+      }
+    }
+    return undefined;
   }
 
   hit(name) {
-
     // Fill this in
 
   }
