@@ -164,6 +164,7 @@ describe ('Enemy', function () {
   });
 
 
+  // this test case only passes when the random movement lands on west.
   it('should be able to move to a new room', function () {
 
     let westRoom = new Room("West Room", "A room to the west of testRoom");

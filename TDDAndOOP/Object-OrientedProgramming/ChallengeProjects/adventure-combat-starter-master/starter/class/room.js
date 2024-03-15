@@ -1,3 +1,5 @@
+const { Enemy } = require('./enemy');
+
 class Room {
 
   constructor(name, description) {
@@ -55,7 +57,7 @@ class Room {
     // Fill this in
     for(let i= 0; i<this.items.length; i++){
       if(this.items[i].name === name){
-        return items[i];
+        return this.items[i];
       }
     }
     return null;
@@ -63,6 +65,9 @@ class Room {
 
   getEnemyByName(name) {
     // Fill this in
+    if(this.name instanceof Enemy){
+      return name;
+    }
   }
 }
 

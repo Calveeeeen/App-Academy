@@ -6,15 +6,22 @@ class Enemy extends Character {
     // Fill this in
     super(name, description, currentRoom)
     this.cooldown = 3000;
+    this.strength= 10;
+    this.health=100;
   }
 
   setPlayer(player) {
     this.player = player;
   }
 
-
   randomMove() {
-    // Fill this in
+    const directions= ['n','s','w','e'];
+    const randomDirection = directions[Math.floor(Math.random()*directions.length)];
+    const nextRoom = this.currentRoom.getRoomInDirection(randomDirection);
+    if(nextRoom){
+      this.currentRoom = nextRoom;
+      this.cooldown=3000;
+    }
   }
 
   takeSandwich() {
@@ -44,7 +51,7 @@ class Enemy extends Character {
 
   applyDamage(amount) {
     // Fill this in
-    this.health = this.health - amount;
+    this.health -= amount;
     if(this.health <= 0){
       this.die();
     }
@@ -55,9 +62,11 @@ class Enemy extends Character {
   act() {
     if (this.health <= 0) {
       // Dead, do nothing;
-    } else if (this.cooldown > 0) {
+    }
+    else if (this.cooldown > 0) {
       this.rest();
-    } else {
+    }
+    else {
       this.scratchNose();
       this.rest();
     }

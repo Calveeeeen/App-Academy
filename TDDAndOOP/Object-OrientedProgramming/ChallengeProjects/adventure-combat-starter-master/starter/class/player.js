@@ -4,10 +4,10 @@ const {Food} = require('./food');
 
 class Player extends Character {
 
-  constructor(name, description, startingRoom) {
+  constructor(name, description, currentRoom, items=[]) {
     super(name, description="main character");
-    this.currentRoom = startingRoom;
-    this.items=[];
+    this.currentRoom = currentRoom;
+    this.items=items;
   }
 
   move(direction) {
@@ -39,11 +39,13 @@ class Player extends Character {
     // Fill this in
     const itemIndex = this.currentRoom.items.findIndex(item => item.name === itemName);
     if (itemIndex !== -1) {
-      const item = this.currentRoom.items.splice(itemIndex, 1)[0];
-      this.items.push(...item);
-      return item;
+        // Remove the item from the room and add it to the player's items
+        const item = this.currentRoom.items.splice(itemIndex, 1)[0];
+        this.items.push(item);
+        console.log(items);
+        return item; // Return the item object
     }
-    return null
+    return null; // Return null if item not found
   }
 
   dropItem(itemName) {
@@ -75,7 +77,6 @@ class Player extends Character {
         return this.items[i];
       }
     }
-    return undefined;
   }
 
   hit(name) {
