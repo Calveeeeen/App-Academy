@@ -65,9 +65,13 @@ class Room {
 
   getEnemyByName(name) {
     // Fill this in
-    if(this.name instanceof Enemy){
-      return name;
+    const enemies = this.getEnemies(); // Get the enemies in the room
+    for (let enemy of enemies) {
+        if (enemy.name === name) {
+            return enemy; // Return the enemy with the specified name
+        }
     }
+    return null;
   }
 }
 
