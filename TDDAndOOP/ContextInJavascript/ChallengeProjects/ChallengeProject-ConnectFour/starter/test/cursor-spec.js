@@ -8,11 +8,11 @@ describe ('Cursor', function () {
   let cursor;
 
   beforeEach(function() {
-    cursor = new Cursor(3, 3);
+    cursor = new Cursor(6, 7);
   });
 
 
-  it('initializes for a 3x3 grid', function () {
+  it('initializes for a 6x7 grid', function () {
     expect(cursor.row).to.equal(0);
     expect(cursor.col).to.equal(0);
   });
@@ -68,4 +68,3 @@ describe ('Cursor', function () {
 
 
 });
-

@@ -45,6 +45,7 @@ class Screen {
     Screen.initialized = true;
 
     Screen.waitForInput();
+    Screen.render();
   }
 
   static setGridlines(gridLines) {

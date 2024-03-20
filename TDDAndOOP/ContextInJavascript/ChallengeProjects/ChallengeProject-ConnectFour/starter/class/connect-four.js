@@ -51,17 +51,17 @@ class ConnectFour {
 
   renderGrid() {
     console.clear();
-    for (let row = 0; row < 5; row++) {
+    for (let row = 0; row < 6; row++) {
         let rowStr = ' ';
-        for (let col = 0; col < 6; col++) {
+        for (let col = 0; col < 7; col++) {
             rowStr += this.grid[row][col];
-            if (col < 5) {
+            if (col < 7) {
                 rowStr += ' | ';
             }
         }
         console.log(rowStr);
-        if (row < 4) {
-            console.log('-----------------------');
+        if (row < 5) {
+            console.log('-------------------------------');
         }
     }
   }

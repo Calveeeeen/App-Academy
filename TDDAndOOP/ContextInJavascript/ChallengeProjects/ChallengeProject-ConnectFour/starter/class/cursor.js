@@ -31,14 +31,14 @@ class Cursor {
     }
   }
   down(){
-    //move cursor up
-    if(this.row < 5){
+    //move cursor down
+    if(this.row < 6){
       this.resetBackgroundColor();
       this.row++;
       this.setBackgroundColor();
       Screen.render();
     }
-    // to pass test case: we're using a grid of 3x3
+    // to pass test case use the code below: we're using a grid of 3x3
     // if(this.row < 2){
     //   this.resetBackgroundColor();
     //   this.row++;
@@ -57,18 +57,19 @@ class Cursor {
   }
   right() {
     // Move cursor right
-    if(this.col < 6){
+    if(this.col < 7){
       this.resetBackgroundColor();
       this.col++;
       this.setBackgroundColor();
       Screen.render();
     }
-    // to pass test case: we're using a grid of 3x3
+    // to pass test case use the code below: we're using a grid of 3x3
     // if(this.col < 2){
     //   this.resetBackgroundColor();
     //   this.col++;
     //   this.setBackgroundColor();
     //   Screen.render();
+    // }
   }
 }
 
