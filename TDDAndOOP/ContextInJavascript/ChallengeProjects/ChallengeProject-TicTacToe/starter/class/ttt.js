@@ -76,7 +76,7 @@ class TTT {
       }
     }
 
-    // check or vertical wins
+    // check for vertical wins
     for(let col = 0; col < 3; col++){
       if(grid[0][col] === grid[1][col] && grid[1][col]===grid[2][col] && grid[0][col] !== ' '){
         return grid[0][col];
