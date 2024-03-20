@@ -3,6 +3,9 @@ class ComputerPlayer {
 
   static getValidMoves(grid) {
     // Your code here
+    if(this.grid[row][col] === ' '){
+      placeMove();
+    }
   }
 
   static randomMove(grid) {
