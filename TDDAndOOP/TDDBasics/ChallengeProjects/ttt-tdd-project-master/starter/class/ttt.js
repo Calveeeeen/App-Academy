@@ -7,9 +7,9 @@ class TTT {
 
     this.playerTurn = "O";
 
-    this.grid = [[' ',' ',' '],
-                 [' ',' ',' '],
-                 [' ',' ',' ']]
+    this.grid = [[' ', ' ', ' '],
+                 [' ', ' ', ' '],
+                 [' ', ' ', ' ']]
 
     this.cursor = new Cursor(3, 3);
 
@@ -17,23 +17,89 @@ class TTT {
     Screen.initialize(3, 3);
     Screen.setGridlines(true);
 
-    // Replace this with real commands
-    Screen.addCommand('t', 'test command (remove)', TTT.testCommand);
+    Screen.addCommand("w", "move cursor up", () => this.cursor.up());
+    Screen.addCommand("a", "move cursor left", () => this.cursor.left());
+    Screen.addCommand("s", "move cursor down", () => this.cursor.down());
+    Screen.addCommand("d", "move cursor right", () => this.cursor.right());
 
     Screen.render();
   }
 
-  // Remove this
-  static testCommand() {
-    console.log("TEST COMMAND");
+  placeMove() {
+    const row = this.cursor.row;
+    const col = this.cursor.col;
+    if (this.grid[row][col] === ' ') {
+      this.grid[row][col] = this.playerTurn;
+      this.playerTurn = this.playerTurn === 'O' ? 'X' : 'O'; // Switch player turn
+      this.renderGrid(); // Update the screen with the new move
+      const winner = TTT.checkWin(this.grid); // Check if the game has ended after the move
+      if (winner) {
+        TTT.endGame(winner); // End the game if there is a winner
+      }
+    } else {
+      Screen.setMessage("Position already occupied.");
+    }
+  }
+
+  renderGrid() {
+    console.clear();
+    for (let row = 0; row < 3; row++) {
+        let rowStr = '';
+        for (let col = 0; col < 3; col++) {
+            rowStr += this.grid[row][col];
+            if (col < 2) {
+                rowStr += ' | ';
+            }
+        }
+        console.log(rowStr);
+        if (row < 2) {
+            console.log('---------');
+        }
+    }
   }
 
   static checkWin(grid) {
-
     // Return 'X' if player X wins
     // Return 'O' if player O wins
     // Return 'T' if the game is a tie
     // Return false if the game has not ended
+
+    // check for horizontal wins
+    for (let row = 0; row < 3; row++) {
+      if (grid[row][0] === grid[row][1] && grid[row][1] === grid[row][2] && grid[row][0] !== ' ') {
+        return grid[row][0]; // Return the symbol of the winner
+      }
+    }
+
+    // check for vertical wins
+    for (let col = 0; col < 3; col++) {
+      if (grid[0][col] === grid[1][col] && grid[1][col] === grid[2][col] && grid[0][col] !== ' ') {
+        return grid[0][col];
+      }
+    }
+
+    // check for diagonal wins
+
+    if (grid[0][0] === grid[1][1] && grid[1][1] === grid[2][2] && grid[0][0] !== ' ') {
+      return grid[0][0];
+    }
+    if (grid[0][2] === grid[1][1] && grid[1][1] === grid[2][0] & grid[2][0] !== ' ') {
+      return grid[0][2]
+    }
+
+    let isTie = true;
+    for (let row = 0; row < 3; row++) {
+      for (let col = 0; col < 3; col++) {
+        if (grid[row][col] === ' ') {
+          isTie = false;
+          break;
+        }
+      }
+    }
+    if (isTie) {
+      return 'T'; // Return 'tie' if no winner and no empty spaces
+    }
+    return false; // Return false if no winner and empty spaces;
 
   }
 
