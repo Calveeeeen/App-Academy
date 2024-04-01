@@ -1,3 +1,4 @@
+const TTT = require("./ttt");
 
 class ComputerPlayer {
 
@@ -34,7 +35,7 @@ class ComputerPlayer {
         if(grid[row][col] === ' '){
           grid[row][col]===symbol;
 
-          if(this.ttt.checkWin(grid)){
+          if(TTT.checkWin(grid)){
             winningMove.push({row, col});
           }
           grid[row][col] = ' ';
