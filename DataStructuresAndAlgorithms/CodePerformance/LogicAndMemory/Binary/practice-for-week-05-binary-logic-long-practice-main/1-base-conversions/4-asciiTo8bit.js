@@ -8,6 +8,16 @@ const addZeros = require('../utils/addZeros');
 
 const asciiTo8bit = str => {
   // Your code here
+  let binArr = [];
+  let arr = str.split('');
+  for(let i=0;i<arr.length; i++){
+    let el = arr[i];
+    let asciiVal =el.charCodeAt(0);
+    let binVal =asciiVal.toString(2).padStart(8, '0');
+    binArr.push(binVal);
+  }
+
+  return binArr.join('');
 };
 
 /******************************************************************************/

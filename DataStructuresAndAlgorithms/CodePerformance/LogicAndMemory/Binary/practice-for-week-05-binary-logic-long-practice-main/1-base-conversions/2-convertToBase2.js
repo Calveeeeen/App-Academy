@@ -4,6 +4,16 @@
 
 const convertToBase2 = element => {
   // Your code here
+  let binary = '';
+  if(element === 0){
+    return 0
+  }
+  while(element > 0){
+    let r = element%2;
+    binary=r+binary;
+    element =Math.floor(element/2);
+  }
+  return '0b'.concat(binary);
 };
 
 /******************************************************************************/
