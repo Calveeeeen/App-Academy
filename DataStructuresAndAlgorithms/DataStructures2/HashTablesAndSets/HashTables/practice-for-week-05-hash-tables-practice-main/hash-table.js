@@ -1,38 +1,62 @@
 const sha256 = require('js-sha256');
 
 class KeyValuePair {
-  constructor(key, value) {
-    this.key = key;
-    this.value = value;
-    this.next = null;
-  }
+	constructor(key, value) {
+		this.key = key;
+		this.value = value;
+		this.next = null;
+	}
 }
 
 class HashTable {
 
-  constructor(numBuckets = 4) {
-    // Your code here
-  }
+	constructor(initialCapacity = 2, numBuckets = 4, data, count) {
+		// Your code here
+		this.numBuckets = numBuckets;
+		this.capacity = initialCapacity;
+		this.data = new Array(this.capacity).fill(null);
+		this.count = 0;
+	}
 
-  hash(key) {
-    // Your code here
-  }
+	hash(key) {
+		// Your code here
+		let code = sha256(key);
+		let first8 = code.slice(0, 8);
+		let flip = first8.split("").reverse().join("");
+		// decimal vals for the given hexdecimal V
+		let decCode = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, a: 10, b: 11, c: 12, d: 13, e: 14, f: 15 }
+		let dec = 0;
+		// first8 is in hexidecimal -> need to convert first8 to decimal
+		for(let i=0; i<flip.length; i++){
+			let el = flip[i];
+			let val = decCode[el];
+			// formula for converting hex to decimal V
+			dec += (val* (16**i));
+		}
+		// return the decimal val;
+		return dec;
+	}
 
-  hashMod(key) {
-    // Your code here
-  }
+	hashMod(key) {
+		// Your code here
+		let val = this.hash(key)
+		console.log(val);
+		let ind = val%this.capacity;
+		console.log(ind);
+		return ind;
+	}
 
-  insertNoCollisions(key, value) {
-    // Your code here
-  }
+	insertNoCollisions(key, value) {
+		// Your code here
+	}
 
-  insertWithHashCollisions(key, value) {
-    // Your code here
-  }
+	insertWithHashCollisions(key, value) {
+		// Your code here
+	}
 
-  insert(key, value) {
-    // Your code here
-  }
+	insert(key, value) {
+		// Your code here
+	}
 
 }
 
