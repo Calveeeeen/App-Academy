@@ -27,11 +27,11 @@ class HashTable {
 		let decCode = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, a: 10, b: 11, c: 12, d: 13, e: 14, f: 15 }
 		let dec = 0;
 		// first8 is in hexidecimal -> need to convert first8 to decimal
-		for(let i=0; i<flip.length; i++){
+		for (let i = 0; i < flip.length; i++) {
 			let el = flip[i];
 			let val = decCode[el];
 			// formula for converting hex to decimal V
-			dec += (val* (16**i));
+			dec += (val * (16 ** i));
 		}
 		// return the decimal val;
 		return dec;
@@ -41,13 +41,21 @@ class HashTable {
 		// Your code here
 		let val = this.hash(key)
 		console.log(val);
-		let ind = val%this.capacity;
+		let ind = val % this.capacity;
 		console.log(ind);
 		return ind;
 	}
 
 	insertNoCollisions(key, value) {
 		// Your code here
+		let index = this.hashMod(key);
+		if(this.data[index] == null){
+			this.data[index] = { key, value };
+			this.count++;
+		}
+		else{
+			throw new Error('hash collision or same key/value pair already exists!');
+		}
 	}
 
 	insertWithHashCollisions(key, value) {
