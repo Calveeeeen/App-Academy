@@ -60,6 +60,16 @@ class HashTable {
 
 	insertWithHashCollisions(key, value) {
 		// Your code here
+		let index = this.hashMod(key);
+		let newData = new KeyValuePair(key, value);
+		if(this.data[index] == null){
+			this.data[index] = newData;
+		}
+		else{
+			newData.next = this.data[index];
+			this.data[index] = newData
+		}
+		this.count++;
 	}
 
 	insert(key, value) {
