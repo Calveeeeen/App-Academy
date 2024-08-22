@@ -77,26 +77,26 @@ function getHeight(rootNode) {
 
 function countNodes(rootNode) {
   // Your code here
-  if(rootNode === null){
+  if (rootNode === null) {
     return 0;
   }
-  return countNodes(rootNode.left)+1+countNodes(rootNode.right);
+  return countNodes(rootNode.left) + 1 + countNodes(rootNode.right);
 }
 
 function balancedTree(rootNode) {
   // Your code here
-  function checkBalance(rootNode){
-    if(rootNode === null){
-      return {height: 0, balanced: true};
+  function checkBalance(rootNode) {
+    if (rootNode === null) {
+      return { height: 0, balanced: true };
     }
     let left = checkBalance(rootNode.left);
     let right = checkBalance(rootNode.right);
 
-    let currentHeight =   Math.max(left.height, right.height)+1;
+    let currentHeight = Math.max(left.height, right.height) + 1;
 
     let currentBalance = left.balanced && right.balanced && Math.abs(left.height - right.height) <= 1;
 
-    return {height: currentHeight, balanced: currentBalance};
+    return { height: currentHeight, balanced: currentBalance };
   }
 
   return checkBalance(rootNode).balanced;
@@ -105,23 +105,23 @@ function balancedTree(rootNode) {
 
 function getParentNode(rootNode, target) {
   // Your code here
-  if(rootNode === null || rootNode.val === target){
+  if (rootNode === null || rootNode.val === target) {
     return null;
   }
 
   let queue = [rootNode];
-  while(queue.length > 0){
+  while (queue.length > 0) {
     let currentNode = queue.shift();
 
-    if(currentNode.left !== null){
-      if(currentNode.left.val === target){
+    if (currentNode.left !== null) {
+      if (currentNode.left.val === target) {
         return currentNode;
       }
       queue.push(currentNode.left);
     }
 
-    if(currentNode.right !== null){
-      if(currentNode.right.val === target){
+    if (currentNode.right !== null) {
+      if (currentNode.right.val === target) {
         return currentNode;
       }
       queue.push(currentNode.right);
@@ -133,38 +133,38 @@ function getParentNode(rootNode, target) {
 
 function inOrderPredecessor(rootNode, target) {
   // Your code here
-  if(rootNode === null){
+  if (rootNode === null) {
     return null;
   }
 
   let predecessor = null;
   let current = rootNode;
 
-  while(current!== null){
-    if(target > current.val){
+  while (current !== null) {
+    if (target > current.val) {
       predecessor = current;
       current = current.right;
     }
-    else if(target < current.val){
+    else if (target < current.val) {
       current = current.left;
     }
-    else{
-      if(current.left !== null){
+    else {
+      if (current.left !== null) {
         predecessor = current.left;
-        while(predecessor.right !== null){
+        while (predecessor.right !== null) {
           predecessor = predecessor.right;
         }
       }
       break
     }
   }
-
+  // console.log(predecessor);
   return predecessor ? predecessor.val : null
 }
 
 function deleteNodeBST(rootNode, target) {
   // Do a traversal to find the node. Keep track of the parent
-  
+
   // Undefined if the target cannot be found
 
   // Set target based on parent
@@ -183,7 +183,63 @@ function deleteNodeBST(rootNode, target) {
 
   // Case 3: One child:
   //   Make the parent point to the child
+  if (rootNode === null) {
+    return undefined;
+  }
+  function findMax(rootNode){
+    while(rootNode.right !== null){
+      rootNode = rootNode.right;
+    }
+    return rootNode;
+  }
 
+  function findMin(rootNode){
+    while(rootNode.left !== null){
+      rootNode = rootNode.left;
+    }
+    return rootNode;
+  }
+  function deleteNodeHelper(node, target) {
+    if (node === null) {
+      return null;
+    }
+    if (target < node.val) {
+      node.left = deleteNodeHelper(node.left, target);
+    }
+    else if (target > node.val) {
+      node.right = deleteNodeHelper(node.right, target);
+    }
+    else {
+      if (node.left === null && node.right === null) {
+        return null;
+      }
+      if (node.left === null) {
+        return node.right;
+      }
+      else if (node.right === null) {
+        return node.left;
+      }
+      let usePredecessor = true;
+
+      if(usePredecessor){
+        let predecessor = findMax(node.left);
+        node.val = predecessor.val;
+        node.left = deleteNodeHelper(node.left, predecessor.val);
+      }
+      else{
+        let successor = findMin(node.right);
+        node.val = successor.val;
+        node.right = deleteNodeHelper(node.right, successor.val);
+      }
+    }
+    return node;
+  }
+  let ogRoot = rootNode;
+  let newRoot = deleteNodeHelper(rootNode, target);
+  if(newRoot === ogRoot && target !== rootNode.val){
+    return undefined;
+  }
+  return newRoot;
 }
 
 module.exports = {
