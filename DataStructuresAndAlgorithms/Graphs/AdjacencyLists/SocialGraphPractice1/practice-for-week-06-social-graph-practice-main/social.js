@@ -51,14 +51,22 @@ class SocialNetwork {
     return this.follows[userID];
   }
 
+    // this needs to be fixed. doesn't work
   getFollowers(userID) {
     // Your code here
-    let followers = [];
-    while(this.users[this.ID]){
-      if(userID === this.follows[this.ID]){
-        followers.push(this.ID);
+    if (!this.users[userID]) {
+      return null;  // If the user does not exist, return null or an empty list
+    }
+
+    const followers = new Set();
+
+    // Iterate over all users and check if they follow the given userID
+    for (let id in this.follows) {
+      if (this.follows[id].has(userID)) {
+        followers.add(parseInt(id));  // Add the follower's user object to the list
       }
     }
+
     return followers;
   }
 
