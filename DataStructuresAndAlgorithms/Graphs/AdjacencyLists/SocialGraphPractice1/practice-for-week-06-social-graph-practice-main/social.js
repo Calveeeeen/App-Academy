@@ -26,7 +26,7 @@ class SocialNetwork {
 
   getUser(userID) {
     // Your code here
-    if(this.users.hasOwnProperty(userID)){
+    if (this.users.hasOwnProperty(userID)) {
       return this.users[userID];
     }
     return null;
@@ -35,12 +35,12 @@ class SocialNetwork {
   follow(userID1, userID2) {
     // Your code here
     let followed = false;
-    if(this.users.hasOwnProperty(userID1) && this.users.hasOwnProperty(userID2) && userID1 !== userID2){
+    if (this.users.hasOwnProperty(userID1) && this.users.hasOwnProperty(userID2) && userID1 !== userID2) {
       this.follows[userID1].add(userID2);
       followed = true;
       return followed;
     }
-    else{
+    else {
       return followed;
     }
 
@@ -51,7 +51,7 @@ class SocialNetwork {
     return this.follows[userID];
   }
 
-    // this needs to be fixed. doesn't work
+  // this needs to be fixed. doesn't work
   getFollowers(userID) {
     // Your code here
     if (!this.users[userID]) {
@@ -72,6 +72,35 @@ class SocialNetwork {
 
   getRecommendedFollows(userID, degrees) {
     // Your code here
+
+    // get list of og users follows
+    let alreadyFollows = this.follows[userID] || new Set();;
+    let recommended = new Set();
+    let visited = new Set();
+
+    if (!this.users[userID]) {
+      return null;
+    }
+    let recommendedHelper = (currID, remainingDegrees) => {
+      if (remainingDegrees === 0) {
+        return;
+      }
+      visited.add(currID);
+
+      for (let followedID of this.follows[currID] || []) {
+        if (!alreadyFollows.has(followedID) && !visited.has(followedID)) {
+          recommended.add(followedID)
+        }
+        if(!visited.has(followedID)){
+          recommendedHelper(followedID, remainingDegrees - 1);
+        }
+
+      }
+    }
+
+    recommendedHelper(parseInt(userID), degrees+1)
+
+    return Array.from(recommended);
   }
 }
 
