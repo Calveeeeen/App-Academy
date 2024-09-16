@@ -20,3 +20,18 @@ class Solution:
 
     print(largestPerimeter([2,1,2]))
     print(largestPerimeter([1,2,1,10]))
+
+
+class ActualSolution:
+    def largestPerimeter( nums):
+        nums.sort(reverse=True)
+        for i in range(len(nums)-2):
+            num1 = nums[i]
+            num2 = nums[i+1]
+            num3 = nums[i+2]
+            if num1 < num2 + num3:
+                return num1 + num3 + num2
+        return 0
+
+    print(largestPerimeter([2,1,2]))
+    print(largestPerimeter([1,2,1,10]))
