@@ -1,4 +1,28 @@
 /* Your code here */
+#page-title{
+    font-weight: bold;
+}
+
+span.pagenum{
+    position:absolute;
+    right: 10px;
+    font-size: 13px;
+}
+
+p{
+    text-align: justify;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+pre{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+}
 
 /* ===== DO NOT EDIT BELOW THIS COMMENT ===== */
 
