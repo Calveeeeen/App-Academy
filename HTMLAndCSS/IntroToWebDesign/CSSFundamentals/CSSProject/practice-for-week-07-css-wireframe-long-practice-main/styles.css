@@ -1,0 +1,123 @@
+/* Upper navbar css */
+.nav__upper{
+    display: flex;
+    padding: 10px;
+}
+
+.upper__left{
+    /* display: inline-block; */
+    position: absolute;
+    left: 5%;
+}
+
+.upper__right{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+}
+
+.sign-in{
+    color: green;
+}
+.get-started{
+    color: green;
+    border: 1px solid green;
+    padding: 3px;
+}
+/* Lower navbar css */
+.nav__lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* Body CSS */
+h1{
+    display: flex;
+    text-align: center;
+    width: 600px;
+    justify-content: center;
+    margin: auto;
+}
+
+.main__img{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+p:first-of-type{
+    display: flex;
+    text-align: center;
+    width: 600px;
+    justify-content: center;
+    margin: auto;
+}
+
+h2, p {
+    display: flex;
+    width: 55%;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+}
+
+h2{
+    padding: 10px;
+
+}
+
+.external_links{
+    display: flex;
+    width: 55%;
+    margin: auto;
+}
+
+li>a{
+    color: blue;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    width: 65%;
+    margin: auto;
+}
+
+.grid>a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/* Footer CSS */
+.footer{
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    height: 20px;
+}
+.footer__left{
+    position: absolute;
+    left: 5%;
+}
+ .footer__right{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+ }
+
+ .footer__right>a{
+    color: black;
+    padding: 10px;
+
+ }
