@@ -61,7 +61,7 @@ contained in the div for example 3 (specifically, `.example3 > div`), in order
 to make them each fill 1/3 of the flexbox area.
 
 > HINT: You need to resize the width of your browser to confirm the boxes look
-> good at their smallest size (`min-width`) as well as their largest size 
+> good at their smallest size (`min-width`) as well as their largest size
 > (`max-width`) which have already been included in __main.css__ (under the
 > `.example3` selector).
 
