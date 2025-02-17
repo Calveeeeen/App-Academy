@@ -1,0 +1,89 @@
+/* Your code here */
+.masthead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "menu . action"
+        " . tech ."
+        "date logo today";
+}
+
+.masthead-menu{
+    display: flex;
+    align-items: center;
+    grid-area: menu;
+    padding-left: 20px;
+}
+
+.masthead-menu-icon, .masthead-search-icon{
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead-menu-icon:hover, .masthead-search-icon:hover{
+    background-color: #e2e2e2;
+}
+
+.masthead-action{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: action;
+    height: 40px;
+}
+
+.masthead-tech{
+    grid-area: tech;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    position: relative;
+    top: 1px;
+    background-color: #ffffff;
+}
+
+.tech-css, .tech-html, .tech-js, .tech-python{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    margin: 2px;
+    text-align: center;
+}
+.masthead-date{
+    grid-area: date;
+}
+
+.masthead-logo{
+    grid-area: logo;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.masthead-today{
+    grid-area: today;
+}
+
+.masthead-date, .masthead-today{
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 11px;
+}
+
+.masthead-today{
+    justify-content: flex-end;
+}
+.masthead-today-icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.masthead-today, .masthead-logo, .masthead-date{
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
