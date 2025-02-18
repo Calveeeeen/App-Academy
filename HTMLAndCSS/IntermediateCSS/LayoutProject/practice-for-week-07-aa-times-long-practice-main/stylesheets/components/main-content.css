@@ -1,8 +1,9 @@
 /* Your code here */
-body{
+body {
     width: fit-content;
     margin: auto;
 }
+
 main {
     display: flex;
     flex-direction: row;
@@ -77,17 +78,16 @@ article {
     grid-area: list1;
     padding: 11px;
 }
- .listPost>ul>li{
+
+.listPost>ul>li {
     display: list-item;
     list-style: square;
- }
-.left-author {
-    margin: 8px 0;
-}
-
-ul>li {
     position: relative;
     left: 10%;
+}
+
+.left-author {
+    margin: 8px 0;
 }
 
 .vidPost {
@@ -172,16 +172,18 @@ ul>li {
 }
 
 /* Media Queries */
-@media screen and (max-width:1250px){
-    .navList>li{
+@media screen and (max-width:1250px) {
+    .navList>li {
         display: none;
     }
 }
-@media screen and (max-width: 1200px){
-    .right-side{
+
+@media screen and (max-width: 1200px) {
+    .right-side {
         display: none;
     }
-    .left-side{
+
+    .left-side {
         width: 100%;
         border-right: none;
     }
