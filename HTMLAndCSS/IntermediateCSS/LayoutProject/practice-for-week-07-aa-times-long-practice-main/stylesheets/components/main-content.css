@@ -1,1 +1,166 @@
 /* Your code here */
+main {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* universal */
+h2 {
+    font-size: 1.25em;
+    font-weight: bolder;
+    line-height: 25px;
+}
+
+h6 {
+    color: #6f6f6f;
+}
+
+.article__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+.comments {
+    color: #4d7b9f;
+}
+
+article {
+    padding-left: 4px;
+}
+
+.article__title {
+    line-height: 25px;
+}
+
+/* left-side */
+.left-side {
+    width: 65%;
+    border-right: 2px dotted #e2e2e2;
+}
+
+.top-left-grid {
+    display: grid;
+    grid-template-areas:
+        "headerTitle headerTitle headerTitle"
+        "list1 vidPost vidPost"
+        "list1 vidPost vidPost"
+    ;
+    grid-template-columns: 2fr 4fr;
+}
+
+.bot-left-grid {
+    display: grid;
+    grid-template-columns: 10fr 9fr;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.header1 {
+    padding: 11px;
+    grid-area: headerTitle;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.listPost {
+    margin-bottom: 20px;
+    grid-area: list1;
+    padding: 11px;
+}
+
+.left-author {
+    margin: 8px 0;
+}
+
+ul>li {
+    position: relative;
+    left: 10%;
+    display: list-item;
+    list-style: square;
+}
+
+.vidPost {
+    grid-area: vidPost;
+    padding: 11px;
+}
+
+.vidPost>p {
+    position: relative;
+    left: 15%;
+}
+
+.vidCss {
+    padding: 11px;
+    margin: auto;
+    width: 100%;
+    height: 70%;
+}
+
+.bot-left-grid article:first-child {
+    border-right: 2px dotted #e2e2e2;
+}
+
+.bot-left-grid article {
+    padding: 8px;
+}
+
+
+/* right-side */
+.right-side {
+    width: 35%;
+}
+
+.right-side article {
+    border-bottom: 2px dotted #e2e2e2;
+    padding: 11px;
+}
+
+.bot-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 11px;
+}
+
+.bot-right-left {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.bot-right-right {
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+}
+
+.office-image {
+    height: 50px;
+}
+
+.bot-right-left div,
+.bot-right-right div {
+    padding: 2px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.bot-right-left div {
+    border-right: 1px solid #e2e2e2;
+}
+
+.bot-right h3 {
+    color: #6f6f6f;
+    font-size: 14px;
+    margin: 0;
+}
+
+.bot-right h2 {
+    font-size: 16px;
+}
+
+.right-side article h6 {
+    margin: 15px
+}
