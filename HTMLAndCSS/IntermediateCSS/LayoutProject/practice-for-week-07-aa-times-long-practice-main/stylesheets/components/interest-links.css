@@ -39,3 +39,9 @@
 .interest-bar_text p{
     padding: 4px 10px;
 }
+
+@media screen and (max-width: 1000px){
+    .interest-bar{
+        display:none;
+    }
+}
