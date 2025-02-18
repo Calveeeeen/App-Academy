@@ -1,1 +1,41 @@
 /* Your code here */
+.interest-bar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    margin-top: 11px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.interests-bar_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 125px;
+    aspect-ratio: 1/1;
+}
+
+.interest-bar_text{
+    margin: 5px;
+    border-right: 1px dotted #e2e2e2;
+}
+.interest-bar_text:last-child{
+    display: flex;
+    border: none;
+}
+.interest-bar_text-temperature{
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+}
+.interest-bar_text h2{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 4px 10px;
+}
+
+.interest-bar_text p{
+    padding: 4px 10px;
+}
