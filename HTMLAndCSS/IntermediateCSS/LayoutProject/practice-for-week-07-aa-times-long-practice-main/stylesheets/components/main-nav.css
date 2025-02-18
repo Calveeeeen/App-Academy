@@ -1,1 +1,21 @@
 /* Your code here */
+.main{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 11px;
+}
+.navList{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navlist>ul>li>a{
+    font-size: 12px;
+}
+
+a:hover{
+    text-decoration: 2px underline;
+}
