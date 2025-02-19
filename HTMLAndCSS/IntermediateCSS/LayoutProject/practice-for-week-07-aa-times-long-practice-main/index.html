@@ -8,7 +8,8 @@
     <title>AppAcademy Times</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
     <link rel="stylesheet" href="./stylesheets/main-styles.css">
-    <script src="/Users/Calvin/Desktop/Projects/App-Academy/HTMLAndCSS/IntermediateCSS/LayoutProject/practice-for-week-07-aa-times-long-practice-main/scripts/event-handling.js"></script>
+    <script
+        src="/Users/Calvin/Desktop/Projects/App-Academy/HTMLAndCSS/IntermediateCSS/LayoutProject/practice-for-week-07-aa-times-long-practice-main/scripts/event-handling.js"></script>
 </head>
 
 <body>
@@ -17,12 +18,38 @@
         <div class="masthead">
             <div class="masthead-menu">
                 <div class="masthead-menu-icon"><i class="fa fa-bars"></i></div>
-                <div class="masthead-search-icon"><i class="fa fa-search"></i></div>
+                <div class="masthead-search-icon"><i class="fa fa-search"></i>
+                    <!-- Phase 7 -->
+                    <div class="search-modal search-modal--hidden">
+                        <input type="search" class="search-modal__input" placeholder="Search">
+                        <button class="search-model__go">Go</button>
+                    </div>
+                </div>
             </div>
             <div class="masthead-action">
                 <div><button>Subscribe Now</button></div>
                 <div><button>Log In</button></div>
-                <div><i class="fas fa-cog"></i></div>
+                <div><i class="fas fa-cog">
+                        <!-- Phase 6 -->
+                        <div class="pref pref--hidden">
+                            <div class="pref__section">
+                                <div class="pref__section-header">Edition</div>
+                                <ul>
+                                    <li class="pref__section-link"><a href="#">CSS</a></li>
+                                    <li class="pref__section-link"><a href="#">HTML</a></li>
+                                    <li class="pref__section-link"><a href="#">JavaScript</a></li>
+                                    <li class="pref__section-link"><a href="#">Python</a></li>
+                                </ul>
+                            </div>
+                            <div class="pref__section">
+                                <div class="pref__section-header">Help</div>
+                                <ul>
+                                    <li class="pref__section-link"><a href="#">FAQ</a></li>
+                                    <li class="pref__section-link"><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </i></div>
             </div>
             <div class="masthead-tech">
                 <div>
@@ -242,28 +269,6 @@
 
             </div>
         </div>
-
-        <div>
-            <div class="pref pref--hidden">
-                <div class="pref__section">
-                  <div class="pref__section-header">Edition</div>
-                  <ul>
-                    <li class="pref__section-link"><a href="#">CSS</a></li>
-                    <li class="pref__section-link"><a href="#">HTML</a></li>
-                    <li class="pref__section-link"><a href="#">JavaScript</a></li>
-                    <li class="pref__section-link"><a href="#">Python</a></li>
-                  </ul>
-                </div>
-                <div class="pref__section">
-                  <div class="pref__section-header">Help</div>
-                  <ul>
-                    <li class="pref__section-link"><a href="#">FAQ</a></li>
-                    <li class="pref__section-link"><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-        </div>
-
     </main>
     <footer>
 
