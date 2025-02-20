@@ -1,0 +1,204 @@
+.photo-card {
+    background-color: #1d3e81;
+    color: #E8EFF0;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.photo-card a {
+    color: #E8EFF0;
+}
+
+.photo-card img {
+    width: 100%;
+}
+
+.photo-card p {
+    text-align: justify;
+}
+
+.photo-card .content {
+    display: block;
+    text-align: center;
+}
+
+/* Your code here */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .photo-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .content img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .photo-card {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "container container"
+        ;
+    }
+
+    h3 {
+        grid-area: title;
+        text-align: left;
+    }
+
+    .photo-card .content {
+        grid-area: container;
+        display: grid;
+        grid-template-areas:
+            "image description"
+            "image description"
+        ;
+    }
+
+    img {
+        grid-area: image;
+        max-width: 250px;
+        margin: 10px 0;
+    }
+
+    p {
+        grid-area: description;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1499px) {
+    .photo-card {
+        width: 80%;
+        position: static;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "photocard1 photocard2"
+            ". ."
+            "photocard3 ."
+        ;
+
+
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    .photo1 {
+        grid-area: photocard1;
+        margin: auto;
+    }
+
+    .photo2 {
+        grid-area: photocard2;
+        margin: auto;
+    }
+
+    .photo3 {
+        grid-area: photocard3;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    main {
+        display: grid;
+        grid-template-areas:
+            "photocard1 photocard2"
+            ". ."
+            "photocard3 ."
+        ;
+    }
+
+    .photo-card {
+        width: 80%;
+    }
+
+    .photo-card .content {
+        grid-area: container;
+        display: grid;
+        grid-template-areas:
+            "image description"
+            "image description"
+        ;
+    }
+
+    img {
+        grid-area: image;
+        height: 80%;
+        margin: 10px 0;
+    }
+
+    p {
+        grid-area: description;
+        margin: 10px;
+        padding-bottom: 10px;
+        overflow: scroll;
+    }
+
+    .photo1 {
+        grid-area: photocard1;
+        margin: auto;
+    }
+
+    .photo2 {
+        grid-area: photocard2;
+        margin: auto;
+    }
+
+    .photo3 {
+        grid-area: photocard3;
+        margin: auto;
+    }
+}
+
+/* Phase 6 */
+@media print {
+    .photo-card {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "container container"
+        ;
+    }
+
+    h3 {
+        grid-area: title;
+        text-align: left;
+    }
+
+    .photo-card .content {
+        grid-area: container;
+        display: grid;
+        grid-template-areas:
+            "image description"
+            "image description"
+        ;
+    }
+
+    img {
+        grid-area: image;
+        width: 250px;
+        aspect-ratio: 1/1;
+        margin: 10px 0;
+    }
+
+    p {
+        grid-area: description;
+        margin: 10px;
+    }
+}
