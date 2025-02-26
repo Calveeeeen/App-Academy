@@ -1,0 +1,217 @@
+*{
+    font-family: fantasy;
+}
+body{
+    margin: 0;
+}
+nav{
+    background-color: #89CFF0;
+    height: 3rem;
+    display: grid;
+    grid-template-areas: "navlink1 navlink2 navlink3 navlink4 . navbutton";
+    grid-template-columns: 1fr 1fr 1fr 1fr 5fr 1fr;
+    padding: 5px;
+}
+
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FAF9F6;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+.navlink1{
+    grid-area: navlink1;
+}
+
+.navlink2{
+    grid-area: navlink2;
+}
+
+.navlink3{
+    grid-area: navlink3;
+}
+.navlink4{
+    grid-area: navlink4;
+}
+.nav-btn{
+    grid-area: navbutton;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+p{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.btn-primary{
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card{
+    height: 350px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card img{
+    display: flex;
+    width: 16rem;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+}
+
+.card-title{
+    font-size: 1.25em;
+    text-decoration: underline;
+}
+
+.card-text{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.btn-link2{
+    padding-top: 10px;
+    text-align: right;
+    align-content: flex-end;
+}
+
+.alert-primary{
+    text-align: center;
+    margin: 25px auto;
+}
+
+
+.g-3{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.col-md-6{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: auto;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+.col-md-6 .row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.col-md-6 .col{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    gap: 20px;
+}
+
+.col-md-6 .col input{
+    text-align: center;
+}
+
+#inputEmail4{
+    display: flex;
+    margin: 5px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-md-6 #inputPassword4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.col-12{
+    width: 75%;
+    margin: auto;
+}
+
+.col-12 #inputAddress, .col-12 #inputAddress2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+#inputAddress2{
+    width: 250px;
+}
+
+#inputCity{
+    text-align: center;
+}
+.col-md-4{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-2{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+#inputZip{
+    text-align: center;
+}
+
+.form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-check-label{
+    text-align: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.btn-submit{
+    display: flex;
+    margin: auto;
+}
