@@ -14,7 +14,7 @@ code in this file for all of the following phases.
 
 There are two HTML files with forms in the **views** folder. The first is the
 **cat-form.html**. You can see this form in the browser by starting your server
-and navigating to [http://localhost:5000] and clicking the `Create a Cat` link.
+and navigating to [http://localhost:3000] and clicking the `Create a Cat` link.
 
 The `method` and `action` attributes on an HTML `<form>` element determine the
 method and URL of the request that will be made when the form is submitted. The

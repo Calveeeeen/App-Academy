@@ -107,6 +107,23 @@ const server = http.createServer((req, res) => {
     }
 
     // Your code here
+    if(req.method==="POST" && req.url === "/cat"){
+      const newCat = req.body;
+      cat = newCat;
+      console.log("new cat created", cat);
+      res.statusCode = 302;
+      res.setHeader("Location", "/");
+      return res.end()
+    }
+
+    if(req.method==="POST" && req.url === "/dog"){
+      const newDog = req.body;
+      dog = newDog;
+      console.log("new dog created", dog);
+      res.statusCode = 302;
+      res.setHeader("Location", "/");
+      return res.end()
+    }
 
     res.statusCode = 404;
     res.end("Page Not Found");
@@ -114,6 +131,6 @@ const server = http.createServer((req, res) => {
   });
 });
 
-const port = 5000;
+const port = 3000;
 
 server.listen(port, () => console.log("Server is listening on port", port));
