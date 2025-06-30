@@ -13,6 +13,12 @@ const server = http.createServer((req, res) => {
       // application/json
     // Parse the body of the request as x-www-form-urlencoded if Content-Type
       // header is x-www-form-urlencoded
+
+    // if content type is application/json
+    if(req.headers["Content-Type"] === "application/json"){
+      const parsedBody = JSON.parse(reqBody);
+    }
+    // if content type is x-www-form-urlencoded.
     if (reqBody) {
       req.body = reqBody
         .split("&")
@@ -33,6 +39,7 @@ const server = http.createServer((req, res) => {
     };
 
     // Return the `resBody` object as JSON in the body of the response
+    return JSON.stringify(resBody);
   });
 });
 
